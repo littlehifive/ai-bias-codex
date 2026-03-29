@@ -32,36 +32,18 @@
           "note": "Useful for vigilance loss and reduced oversight after trust is established."
         },
         {
-          "title": "Trust (social science)",
-          "url": "https://en.wikipedia.org/wiki/Trust_(social_science)",
-          "subcategory": "Calibration and control beliefs",
-          "note": "Helpful for framing reliance as calibration rather than blind acceptance or rejection."
+          "title": "Technology acceptance model",
+          "url": "https://en.wikipedia.org/wiki/Technology_acceptance_model",
+          "subcategory": "Technology acceptance, legitimacy, and control",
+          "note": "More specific trust-calibration seed for how people come to accept and use AI systems."
         }
       ],
       "exact_candidates": [
-        {
-          "title": "Algorithm appreciation",
-          "url": "https://en.wikipedia.org/wiki/Algorithm_appreciation",
-          "subcategory": "Over-reliance and automation misuse",
-          "note": "Directly captures preference for algorithmic judgment over human judgment."
-        },
-        {
-          "title": "Automation misuse",
-          "url": "https://en.wikipedia.org/wiki/Automation_misuse",
-          "subcategory": "Over-reliance and automation misuse",
-          "note": "Useful complement to automation bias for overdependence on automated systems."
-        },
         {
           "title": "Argument from authority",
           "url": "https://en.wikipedia.org/wiki/Argument_from_authority",
           "subcategory": "Credibility and authority shortcuts",
           "note": "Fits when AI output is accepted because it sounds authoritative rather than because it is checked."
-        },
-        {
-          "title": "Advice discounting",
-          "url": "https://en.wikipedia.org/wiki/Advice_discounting",
-          "subcategory": "Distrust and resistance",
-          "note": "Useful for underweighting outside advice, including machine advice."
         },
         {
           "title": "Automation surprise",
@@ -72,14 +54,26 @@
         {
           "title": "Explainable artificial intelligence",
           "url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence",
-          "subcategory": "Calibration and control beliefs",
+          "subcategory": "Technology acceptance, legitimacy, and control",
           "note": "Important contextual page when explanation changes user trust or overconfidence."
         },
         {
-          "title": "Complacency",
-          "url": "https://en.wikipedia.org/wiki/Complacency",
-          "subcategory": "Oversight and vigilance loss",
-          "note": "Useful general page for reduced checking once a system seems reliable."
+          "title": "Source credibility",
+          "url": "https://en.wikipedia.org/wiki/Source_credibility",
+          "subcategory": "Credibility and authority shortcuts",
+          "note": "More specific than generic credibility for why users accept AI output based on source trustworthiness."
+        },
+        {
+          "title": "Locus of control",
+          "url": "https://en.wikipedia.org/wiki/Locus_of_control",
+          "subcategory": "Technology acceptance, legitimacy, and control",
+          "note": "Captures the felt-control side of AI reliance and acceptance."
+        },
+        {
+          "title": "Judge\u2013advisor system",
+          "url": "https://en.wikipedia.org/wiki/Judge%E2%80%93advisor_system",
+          "subcategory": "Distrust and resistance",
+          "note": "Exact Wikipedia page for advice-taking research that captures when users underweight external machine advice."
         }
       ]
     },
@@ -126,10 +120,10 @@
           "note": "Covers personalization-driven narrowing of exposure."
         },
         {
-          "title": "Stereotype",
-          "url": "https://en.wikipedia.org/wiki/Stereotype",
-          "subcategory": "Stereotypes and group generalization",
-          "note": "Foundational page for generalized beliefs that AI can amplify and legitimize."
+          "title": "Stereotype content model",
+          "url": "https://en.wikipedia.org/wiki/Stereotype_content_model",
+          "subcategory": "Stereotypes and category shortcuts",
+          "note": "More specific seed for structured social impressions that AI can reinforce."
         },
         {
           "title": "Algorithmic bias",
@@ -152,21 +146,21 @@
           "note": "Captures non-representative data as a mechanism behind biased AI outputs."
         },
         {
-          "title": "Measurement bias",
-          "url": "https://en.wikipedia.org/wiki/Measurement_bias",
+          "title": "Proxy (statistics)",
+          "url": "https://en.wikipedia.org/wiki/Proxy_(statistics)",
           "subcategory": "Data and historical pattern carry-over",
-          "note": "Useful when proxies and measurements distort what the AI appears to know."
+          "note": "A more accurate Wikipedia-backed term for proxy-based measurement distortions in AI systems."
         },
         {
           "title": "Implicit stereotype",
           "url": "https://en.wikipedia.org/wiki/Implicit_stereotype",
-          "subcategory": "Stereotypes and group generalization",
+          "subcategory": "Stereotypes and category shortcuts",
           "note": "Covers unconscious group associations that can be reinforced by AI outputs."
         },
         {
           "title": "Out-group homogeneity",
           "url": "https://en.wikipedia.org/wiki/Out-group_homogeneity",
-          "subcategory": "Stereotypes and group generalization",
+          "subcategory": "Stereotypes and category shortcuts",
           "note": "Relevant for systems and users collapsing diverse out-groups into overgeneralized categories."
         },
         {
@@ -184,20 +178,26 @@
         {
           "title": "False consensus effect",
           "url": "https://en.wikipedia.org/wiki/False_consensus_effect",
-          "subcategory": "Stereotypes and group generalization",
+          "subcategory": "Stereotypes and category shortcuts",
           "note": "Fits cases where AI mirroring a user's views makes them seem widely shared."
         },
         {
-          "title": "Schema (psychology)",
-          "url": "https://en.wikipedia.org/wiki/Schema_(psychology)",
-          "subcategory": "Stereotypes and group generalization",
-          "note": "Useful for the generalized templates through which users interpret AI outputs and social groups."
+          "title": "Representativeness heuristic",
+          "url": "https://en.wikipedia.org/wiki/Representativeness_heuristic",
+          "subcategory": "Stereotypes and category shortcuts",
+          "note": "More specific than schema for category-based judgments that make AI output feel right by resemblance."
         },
         {
           "title": "Fairness (machine learning)",
           "url": "https://en.wikipedia.org/wiki/Fairness_(machine_learning)",
           "subcategory": "Data and historical pattern carry-over",
           "note": "Context page for how AI bias is evaluated and contested once users rely on its outputs."
+        },
+        {
+          "title": "Stereotype content model",
+          "url": "https://en.wikipedia.org/wiki/Stereotype_content_model",
+          "subcategory": "Stereotypes and category shortcuts",
+          "note": "Specific page for the warmth-competence structure of stereotypes that AI can reinforce."
         }
       ]
     },
@@ -288,15 +288,15 @@
           "note": "Useful for preference inertia around preexisting or preselected AI options."
         },
         {
-          "title": "Compromise effect",
-          "url": "https://en.wikipedia.org/wiki/Compromise_effect",
-          "subcategory": "Option-set design and nudges",
-          "note": "Fits menus where the middle option appears safest because of comparison effects."
+          "title": "Overchoice",
+          "url": "https://en.wikipedia.org/wiki/Overchoice",
+          "subcategory": "Option-set design, overload, and nudges",
+          "note": "Captures how too many AI-presented options can degrade decisions and become a steering mechanism."
         },
         {
           "title": "Context effect",
           "url": "https://en.wikipedia.org/wiki/Context_effect",
-          "subcategory": "Option-set design and nudges",
+          "subcategory": "Option-set design, overload, and nudges",
           "note": "Useful when surrounding options change how one recommendation is judged."
         },
         {
@@ -424,10 +424,10 @@
           "note": "Useful background for turning abstract or mechanical behavior into person-like behavior."
         },
         {
-          "title": "Animacy",
-          "url": "https://en.wikipedia.org/wiki/Animacy",
+          "title": "Biological motion",
+          "url": "https://en.wikipedia.org/wiki/Biological_motion",
           "subcategory": "Human-likeness cues",
-          "note": "Useful when lifelike cues make the system feel more agentic than it is."
+          "note": "More specific than linguistic animacy for motion cues that make systems seem alive."
         },
         {
           "title": "Uncanny valley",
