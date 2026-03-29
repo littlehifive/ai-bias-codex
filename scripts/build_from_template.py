@@ -10,12 +10,18 @@ from pathlib import Path
 
 
 DISPLAY_LABEL_OVERRIDES = {
+    "AI anthropomorphism": "AI anthropomorphism",
     "Hallucination (artificial intelligence)": "AI hallucination",
+    "Framing effect (psychology)": "Framing effect",
     "Computers are social actors": "CASA",
     "Social presence theory": "Social presence",
     "Recommender system": "Recommender system",
     "Echo chamber (media)": "Echo chamber",
     "Explainable artificial intelligence": "Explainable AI",
+    "False consensus effect": "False consensus",
+    "Fluency heuristic": "Fluency heuristic",
+    "Illusion of explanatory depth": "Explanatory depth",
+    "Identifiable victim effect": "Identifiable victim",
     "Intentional stance": "Intentional stance",
     "Mind projection fallacy": "Mind projection",
     "Algorithm appreciation": "Algorithm appreciation",
@@ -24,7 +30,9 @@ DISPLAY_LABEL_OVERRIDES = {
     "Automation complacency": "Automation complacency",
     "Law of the instrument": "Law of instrument",
     "Escalation of commitment": "Escalation of commitment",
+    "Reactance (psychology)": "Reactance",
     "Selective exposure theory": "Selective exposure",
+    "Trust (social science)": "Trust",
     "Fairness (machine learning)": "ML fairness",
     "Source-monitoring error": "Source monitoring",
     "Targeted advertising": "Targeted ads",

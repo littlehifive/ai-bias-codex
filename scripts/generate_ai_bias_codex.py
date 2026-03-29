@@ -22,20 +22,33 @@ REQUIRED_LEAF_FIELDS = (
 )
 VALID_LINK_KINDS = {"exact", "section", "proxy"}
 DISPLAY_LABEL_OVERRIDES = {
+    "AI anthropomorphism": "AI anthropomorphism",
+    "Anthropomorphism": "Anthropomorphism",
+    "Authority bias": "Authority bias",
+    "Belief perseverance": "Belief perseverance",
+    "Choice architecture": "Choice architecture",
     "Mere-exposure effect": "Mere exposure",
     "Illusory truth effect": "Illusory truth",
     "Hallucination (artificial intelligence)": "AI hallucination",
     "Computers are social actors": "CASA",
+    "Credibility": "Credibility",
     "Social presence theory": "Social presence",
     "Echo chamber (media)": "Echo chamber",
     "Argument from authority": "Authority argument",
     "Explainable artificial intelligence": "Explainable AI",
     "Algorithm appreciation": "Algorithm appreciation",
     "Out-of-the-loop performance problem": "Out-of-the-loop problem",
+    "False consensus effect": "False consensus",
     "Fairness (machine learning)": "ML fairness",
+    "Fluency heuristic": "Fluency heuristic",
+    "Framing effect (psychology)": "Framing effect",
+    "Illusion of explanatory depth": "Explanatory depth",
+    "Identifiable victim effect": "Identifiable victim",
+    "Reactance (psychology)": "Reactance",
     "Selective exposure theory": "Selective exposure",
     "Recommender system": "Recommender systems",
     "Source-monitoring error": "Source monitoring",
+    "Trust (social science)": "Trust",
 }
 
 
@@ -128,9 +141,9 @@ def validate_dataset(dataset):
             )
         for statement in statements:
             leaves = statement.get("leaves", [])
-            if len(leaves) < 3:
+            if len(leaves) < 2:
                 errors.append(
-                    f'Statement "{statement.get("label", "<missing>")}" should have at least 3 leaves, found {len(leaves)}.'
+                    f'Statement "{statement.get("label", "<missing>")}" should have at least 2 leaves, found {len(leaves)}.'
                 )
             for leaf in leaves:
                 for field in REQUIRED_LEAF_FIELDS:

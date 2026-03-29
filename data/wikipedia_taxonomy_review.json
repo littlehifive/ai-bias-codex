@@ -1,0 +1,1649 @@
+{
+  "title": "Human-AI Interaction Bias Taxonomy",
+  "subtitle": "A curated, Wikipedia-backed taxonomy of human judgment distortions in human-AI interaction.",
+  "mission": "Use Wikipedia as the primary source base for a codex of how people miscalibrate trust, selectively uptake information, get steered by presentation, and over-attribute mind or capability to AI.",
+  "curated_table": [
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Automation bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Automation_bias",
+      "why_it_fits": "The canonical page for over-weighting automated recommendations and discounting contradictory non-automated evidence.",
+      "confidence": "high"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Authority bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Authority_bias",
+      "why_it_fits": "Explains why system labels, confident answers, and expert framing can trigger deference to AI output.",
+      "confidence": "high"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Fluency heuristic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fluency_heuristic",
+      "why_it_fits": "Captures the shortcut where easy-to-process answers feel more credible, a common response to polished AI output.",
+      "confidence": "high"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Halo effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halo_effect",
+      "why_it_fits": "Explains how one positive surface trait, such as polished language or interface design, can inflate trust in the whole system.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Out-of-the-loop performance problem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Out-of-the-loop_performance_problem",
+      "why_it_fits": "Directly describes performance loss when automation is trusted enough that people stop actively supervising it.",
+      "confidence": "high"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Vigilance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vigilance",
+      "why_it_fits": "Relevant because sustained monitoring deteriorates when AI handles routine tasks, making misses harder to catch.",
+      "confidence": "medium"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Algorithm aversion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
+      "why_it_fits": "Provides the clearest anchor for under-trust and rejection of algorithmic advice after observed error or perceived threat.",
+      "confidence": "high"
+    },
+    {
+      "category": "Trust and Reliance Miscalibration",
+      "wikipedia_page": "Reactance (psychology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reactance_(psychology)",
+      "why_it_fits": "Explains resistance when AI recommendations feel controlling, autonomy-limiting, or imposed.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Confirmation bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+      "why_it_fits": "The central concept for interpreting AI output in ways that confirm prior views and discount disconfirming material.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Motivated reasoning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Motivated_reasoning",
+      "why_it_fits": "Explains why people can use AI as a justification engine for desired conclusions rather than as a neutral check.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Selective exposure theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_exposure_theory",
+      "why_it_fits": "Directly captures the tendency to seek AI outputs that align with existing beliefs and avoid contradictory answers.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Selective perception",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_perception",
+      "why_it_fits": "Relevant because people can notice agreeable parts of AI output while overlooking the parts that challenge them.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Belief perseverance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belief_perseverance",
+      "why_it_fits": "Explains why users may keep a belief even after AI or source material contradicts it.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Cherry picking",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherry_picking",
+      "why_it_fits": "Fits because AI can make it easier to surface only the snippets or examples that support a chosen conclusion.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Echo chamber (media)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Echo_chamber_(media)",
+      "why_it_fits": "Captures closed loops where repeated, like-minded AI-mediated content strengthens prior beliefs.",
+      "confidence": "high"
+    },
+    {
+      "category": "Belief Reinforcement and Selective Uptake",
+      "wikipedia_page": "Filter bubble",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Filter_bubble",
+      "why_it_fits": "Explains how personalized ranking and curation narrow the range of views users encounter through AI systems.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Anchoring effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+      "why_it_fits": "A direct fit for how initial AI suggestions, estimates, or ranges shift subsequent human judgment.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Framing effect (psychology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+      "why_it_fits": "Captures how equivalent AI outputs can lead to different decisions depending on wording and presentation.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Default effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Default_effect",
+      "why_it_fits": "Relevant to model defaults, suggested prompts, and preselected actions that users tend to accept.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Decoy effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Decoy_effect",
+      "why_it_fits": "Fits AI-mediated option sets where adding one comparison shifts preference toward a target choice.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Availability heuristic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+      "why_it_fits": "Explains why AI-highlighted examples or repeatedly surfaced cases feel more representative than they are.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Attentional bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Attentional_bias",
+      "why_it_fits": "Fits interface-driven emphasis, ranking, and highlighting that steer what users notice first.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Priming (psychology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Priming_(psychology)",
+      "why_it_fits": "Useful for subtle cueing from prompts, examples, and system context that shifts later responses and decisions.",
+      "confidence": "high"
+    },
+    {
+      "category": "Judgment Steering by Anchors and Frames",
+      "wikipedia_page": "Choice architecture",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Choice_architecture",
+      "why_it_fits": "Provides the broad design framework for how AI interfaces structure the options users end up choosing among.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "Anthropomorphism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anthropomorphism",
+      "why_it_fits": "The foundational concept for attributing human traits, motives, or feelings to non-human systems.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "AI anthropomorphism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
+      "why_it_fits": "The most direct page for applying anthropomorphic attribution specifically to AI systems.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "ELIZA effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/ELIZA_effect",
+      "why_it_fits": "Directly explains why conversational fluency can make users over-attribute understanding or empathy to AI.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "Computers are social actors",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Computers_are_social_actors",
+      "why_it_fits": "Captures the HCI finding that people automatically apply social heuristics to computers and agents.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "Intentional stance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Intentional_stance",
+      "why_it_fits": "Useful for interpreting AI behavior as if the system has beliefs, goals, or intentions of its own.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "Mind projection fallacy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mind_projection_fallacy",
+      "why_it_fits": "Explains the error of projecting one's own interpretation onto the world, including onto model output and behavior.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "Illusion of explanatory depth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth",
+      "why_it_fits": "Fits cases where users think either they or the model understand a topic more deeply than is actually true.",
+      "confidence": "high"
+    },
+    {
+      "category": "Mind-Perception and Capability Illusions",
+      "wikipedia_page": "Overconfidence effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overconfidence_effect",
+      "why_it_fits": "Relevant to overestimating the reliability or competence of AI based on confident presentation and successful past use.",
+      "confidence": "high"
+    }
+  ],
+  "recommended_codex_structure": [
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategories": [
+        {
+          "subcategory": "Over-reliance and deference",
+          "pages": [
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Over-reliance and deference",
+              "wikipedia_page_title": "Automation bias",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Automation_bias",
+              "why_it_fits": "The canonical page for over-weighting automated recommendations and discounting contradictory non-automated evidence.",
+              "cross_links": [
+                "Judgment Steering by Anchors and Frames"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Over-reliance and deference",
+              "wikipedia_page_title": "Authority bias",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Authority_bias",
+              "why_it_fits": "Explains why system labels, confident answers, and expert framing can trigger deference to AI output.",
+              "cross_links": [
+                "Judgment Steering by Anchors and Frames"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Credibility shortcuts",
+          "pages": [
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Credibility shortcuts",
+              "wikipedia_page_title": "Fluency heuristic",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Fluency_heuristic",
+              "why_it_fits": "Captures the shortcut where easy-to-process answers feel more credible, a common response to polished AI output.",
+              "cross_links": [
+                "Judgment Steering by Anchors and Frames"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Credibility shortcuts",
+              "wikipedia_page_title": "Halo effect",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Halo_effect",
+              "why_it_fits": "Explains how one positive surface trait, such as polished language or interface design, can inflate trust in the whole system.",
+              "cross_links": [
+                "Mind-Perception and Capability Illusions"
+              ],
+              "confidence": "medium",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Monitoring collapse",
+          "pages": [
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Monitoring collapse",
+              "wikipedia_page_title": "Out-of-the-loop performance problem",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Out-of-the-loop_performance_problem",
+              "why_it_fits": "Directly describes performance loss when automation is trusted enough that people stop actively supervising it.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Monitoring collapse",
+              "wikipedia_page_title": "Vigilance",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Vigilance",
+              "why_it_fits": "Relevant because sustained monitoring deteriorates when AI handles routine tasks, making misses harder to catch.",
+              "cross_links": [],
+              "confidence": "medium",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Resistance and backlash",
+          "pages": [
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Resistance and backlash",
+              "wikipedia_page_title": "Algorithm aversion",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
+              "why_it_fits": "Provides the clearest anchor for under-trust and rejection of algorithmic advice after observed error or perceived threat.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Trust and Reliance Miscalibration",
+              "public_label": "We trust AI too much or too little",
+              "failure_point": "whether we follow AI appropriately",
+              "subcategory": "Resistance and backlash",
+              "wikipedia_page_title": "Reactance (psychology)",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Reactance_(psychology)",
+              "why_it_fits": "Explains resistance when AI recommendations feel controlling, autonomy-limiting, or imposed.",
+              "cross_links": [
+                "Judgment Steering by Anchors and Frames"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        }
+      ],
+      "support_pages": [
+        {
+          "top_level_category": "Trust and Reliance Miscalibration",
+          "public_label": "We trust AI too much or too little",
+          "failure_point": "whether we follow AI appropriately",
+          "subcategory": "support",
+          "wikipedia_page_title": "Trust (social science)",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Trust_(social_science)",
+          "why_it_fits": "Useful background for trust calibration, but too broad to serve as a codex leaf on its own.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Trust and Reliance Miscalibration",
+          "public_label": "We trust AI too much or too little",
+          "failure_point": "whether we follow AI appropriately",
+          "subcategory": "support",
+          "wikipedia_page_title": "Credibility",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Credibility",
+          "why_it_fits": "Useful for source-believability framing, but broader and less bias-specific than the accepted leaves.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Trust and Reliance Miscalibration",
+          "public_label": "We trust AI too much or too little",
+          "failure_point": "whether we follow AI appropriately",
+          "subcategory": "support",
+          "wikipedia_page_title": "Situation awareness",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Situation_awareness",
+          "why_it_fits": "Helpful for explaining lost oversight under automation, but not itself a human-AI bias concept.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Trust and Reliance Miscalibration",
+          "public_label": "We trust AI too much or too little",
+          "failure_point": "whether we follow AI appropriately",
+          "subcategory": "support",
+          "wikipedia_page_title": "Learned helplessness",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Learned_helplessness",
+          "why_it_fits": "Relevant to dependence and reduced initiative, but more indirect than the core reliance pages.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        }
+      ]
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategories": [
+        {
+          "subcategory": "Confirmation-preserving interpretation",
+          "pages": [
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Confirmation-preserving interpretation",
+              "wikipedia_page_title": "Confirmation bias",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+              "why_it_fits": "The central concept for interpreting AI output in ways that confirm prior views and discount disconfirming material.",
+              "cross_links": [
+                "Mind-Perception and Capability Illusions"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Confirmation-preserving interpretation",
+              "wikipedia_page_title": "Motivated reasoning",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Motivated_reasoning",
+              "why_it_fits": "Explains why people can use AI as a justification engine for desired conclusions rather than as a neutral check.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Selective intake and avoidance",
+          "pages": [
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Selective intake and avoidance",
+              "wikipedia_page_title": "Selective exposure theory",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_exposure_theory",
+              "why_it_fits": "Directly captures the tendency to seek AI outputs that align with existing beliefs and avoid contradictory answers.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Selective intake and avoidance",
+              "wikipedia_page_title": "Selective perception",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_perception",
+              "why_it_fits": "Relevant because people can notice agreeable parts of AI output while overlooking the parts that challenge them.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Belief persistence and evidence filtering",
+          "pages": [
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Belief persistence and evidence filtering",
+              "wikipedia_page_title": "Belief perseverance",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Belief_perseverance",
+              "why_it_fits": "Explains why users may keep a belief even after AI or source material contradicts it.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Belief persistence and evidence filtering",
+              "wikipedia_page_title": "Cherry picking",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Cherry_picking",
+              "why_it_fits": "Fits because AI can make it easier to surface only the snippets or examples that support a chosen conclusion.",
+              "cross_links": [
+                "Judgment Steering by Anchors and Frames"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Reinforcement loops",
+          "pages": [
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Reinforcement loops",
+              "wikipedia_page_title": "Echo chamber (media)",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Echo_chamber_(media)",
+              "why_it_fits": "Captures closed loops where repeated, like-minded AI-mediated content strengthens prior beliefs.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Belief Reinforcement and Selective Uptake",
+              "public_label": "We use AI to confirm what we already believe",
+              "failure_point": "how our prior beliefs shape what we take from AI",
+              "subcategory": "Reinforcement loops",
+              "wikipedia_page_title": "Filter bubble",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Filter_bubble",
+              "why_it_fits": "Explains how personalized ranking and curation narrow the range of views users encounter through AI systems.",
+              "cross_links": [
+                "Judgment Steering by Anchors and Frames"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        }
+      ],
+      "support_pages": [
+        {
+          "top_level_category": "Belief Reinforcement and Selective Uptake",
+          "public_label": "We use AI to confirm what we already believe",
+          "failure_point": "how our prior beliefs shape what we take from AI",
+          "subcategory": "support",
+          "wikipedia_page_title": "Illusory truth effect",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Illusory_truth_effect",
+          "why_it_fits": "Useful for repeated AI phrasing that starts to feel true, but narrower than the core accepted leaves.",
+          "cross_links": [
+            "Judgment Steering by Anchors and Frames"
+          ],
+          "confidence": "high",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Belief Reinforcement and Selective Uptake",
+          "public_label": "We use AI to confirm what we already believe",
+          "failure_point": "how our prior beliefs shape what we take from AI",
+          "subcategory": "support",
+          "wikipedia_page_title": "Availability cascade",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_cascade",
+          "why_it_fits": "Helpful for social repetition effects, but more collective than the main belief-updating leaves.",
+          "cross_links": [
+            "Judgment Steering by Anchors and Frames"
+          ],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Belief Reinforcement and Selective Uptake",
+          "public_label": "We use AI to confirm what we already believe",
+          "failure_point": "how our prior beliefs shape what we take from AI",
+          "subcategory": "support",
+          "wikipedia_page_title": "Bias blind spot",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Bias_blind_spot",
+          "why_it_fits": "Useful for why users think others are misled by AI while assuming they themselves are objective.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Belief Reinforcement and Selective Uptake",
+          "public_label": "We use AI to confirm what we already believe",
+          "failure_point": "how our prior beliefs shape what we take from AI",
+          "subcategory": "support",
+          "wikipedia_page_title": "Source-monitoring error",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Source-monitoring_error",
+          "why_it_fits": "Useful for forgetting whether a claim came from the model, a source, or the user's own memory.",
+          "cross_links": [
+            "Mind-Perception and Capability Illusions"
+          ],
+          "confidence": "medium",
+          "status": "accepted-support"
+        }
+      ]
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategories": [
+        {
+          "subcategory": "Reference-point effects",
+          "pages": [
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Reference-point effects",
+              "wikipedia_page_title": "Anchoring effect",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+              "why_it_fits": "A direct fit for how initial AI suggestions, estimates, or ranges shift subsequent human judgment.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Reference-point effects",
+              "wikipedia_page_title": "Framing effect (psychology)",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+              "why_it_fits": "Captures how equivalent AI outputs can lead to different decisions depending on wording and presentation.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Defaults and comparative choice steering",
+          "pages": [
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Defaults and comparative choice steering",
+              "wikipedia_page_title": "Default effect",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Default_effect",
+              "why_it_fits": "Relevant to model defaults, suggested prompts, and preselected actions that users tend to accept.",
+              "cross_links": [
+                "Trust and Reliance Miscalibration"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Defaults and comparative choice steering",
+              "wikipedia_page_title": "Decoy effect",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Decoy_effect",
+              "why_it_fits": "Fits AI-mediated option sets where adding one comparison shifts preference toward a target choice.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Salience and retrieval effects",
+          "pages": [
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Salience and retrieval effects",
+              "wikipedia_page_title": "Availability heuristic",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+              "why_it_fits": "Explains why AI-highlighted examples or repeatedly surfaced cases feel more representative than they are.",
+              "cross_links": [
+                "Belief Reinforcement and Selective Uptake"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Salience and retrieval effects",
+              "wikipedia_page_title": "Attentional bias",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Attentional_bias",
+              "why_it_fits": "Fits interface-driven emphasis, ranking, and highlighting that steer what users notice first.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Prompting and designed influence",
+          "pages": [
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Prompting and designed influence",
+              "wikipedia_page_title": "Priming (psychology)",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Priming_(psychology)",
+              "why_it_fits": "Useful for subtle cueing from prompts, examples, and system context that shifts later responses and decisions.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Judgment Steering by Anchors and Frames",
+              "public_label": "AI's suggestions steer our choices",
+              "failure_point": "how AI presentation shapes our choices",
+              "subcategory": "Prompting and designed influence",
+              "wikipedia_page_title": "Choice architecture",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Choice_architecture",
+              "why_it_fits": "Provides the broad design framework for how AI interfaces structure the options users end up choosing among.",
+              "cross_links": [
+                "Trust and Reliance Miscalibration"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        }
+      ],
+      "support_pages": [
+        {
+          "top_level_category": "Judgment Steering by Anchors and Frames",
+          "public_label": "AI's suggestions steer our choices",
+          "failure_point": "how AI presentation shapes our choices",
+          "subcategory": "support",
+          "wikipedia_page_title": "Nudge theory",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Nudge_theory",
+          "why_it_fits": "Useful for intentional steering language, but broader and more policy-oriented than the core leaves.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Judgment Steering by Anchors and Frames",
+          "public_label": "AI's suggestions steer our choices",
+          "failure_point": "how AI presentation shapes our choices",
+          "subcategory": "support",
+          "wikipedia_page_title": "Mere-exposure effect",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Mere-exposure_effect",
+          "why_it_fits": "Relevant to repeated AI suggestions, but more indirect than the main choice-shaping concepts.",
+          "cross_links": [
+            "Belief Reinforcement and Selective Uptake"
+          ],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Judgment Steering by Anchors and Frames",
+          "public_label": "AI's suggestions steer our choices",
+          "failure_point": "how AI presentation shapes our choices",
+          "subcategory": "support",
+          "wikipedia_page_title": "Processing fluency",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Processing_fluency",
+          "why_it_fits": "Useful for polished output that feels right because it is easy to read, but it also overlaps strongly with trust calibration.",
+          "cross_links": [
+            "Trust and Reliance Miscalibration"
+          ],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Judgment Steering by Anchors and Frames",
+          "public_label": "AI's suggestions steer our choices",
+          "failure_point": "how AI presentation shapes our choices",
+          "subcategory": "support",
+          "wikipedia_page_title": "Identifiable victim effect",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Identifiable_victim_effect",
+          "why_it_fits": "Useful for vivid AI-generated cases that skew judgment, but narrower than the core design-level effects.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        }
+      ]
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategories": [
+        {
+          "subcategory": "Human-likeness attribution",
+          "pages": [
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Human-likeness attribution",
+              "wikipedia_page_title": "Anthropomorphism",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Anthropomorphism",
+              "why_it_fits": "The foundational concept for attributing human traits, motives, or feelings to non-human systems.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Human-likeness attribution",
+              "wikipedia_page_title": "AI anthropomorphism",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
+              "why_it_fits": "The most direct page for applying anthropomorphic attribution specifically to AI systems.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Social and agentic projection",
+          "pages": [
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Social and agentic projection",
+              "wikipedia_page_title": "ELIZA effect",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/ELIZA_effect",
+              "why_it_fits": "Directly explains why conversational fluency can make users over-attribute understanding or empathy to AI.",
+              "cross_links": [
+                "Trust and Reliance Miscalibration"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Social and agentic projection",
+              "wikipedia_page_title": "Computers are social actors",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Computers_are_social_actors",
+              "why_it_fits": "Captures the HCI finding that people automatically apply social heuristics to computers and agents.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Mind and intent attribution",
+          "pages": [
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Mind and intent attribution",
+              "wikipedia_page_title": "Intentional stance",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Intentional_stance",
+              "why_it_fits": "Useful for interpreting AI behavior as if the system has beliefs, goals, or intentions of its own.",
+              "cross_links": [],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Mind and intent attribution",
+              "wikipedia_page_title": "Mind projection fallacy",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Mind_projection_fallacy",
+              "why_it_fits": "Explains the error of projecting one's own interpretation onto the world, including onto model output and behavior.",
+              "cross_links": [
+                "Belief Reinforcement and Selective Uptake"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        },
+        {
+          "subcategory": "Capability overestimation",
+          "pages": [
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Capability overestimation",
+              "wikipedia_page_title": "Illusion of explanatory depth",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth",
+              "why_it_fits": "Fits cases where users think either they or the model understand a topic more deeply than is actually true.",
+              "cross_links": [
+                "Trust and Reliance Miscalibration"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            },
+            {
+              "top_level_category": "Mind-Perception and Capability Illusions",
+              "public_label": "We mistake AI for understanding more than it does",
+              "failure_point": "how we misunderstand what the AI is",
+              "subcategory": "Capability overestimation",
+              "wikipedia_page_title": "Overconfidence effect",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Overconfidence_effect",
+              "why_it_fits": "Relevant to overestimating the reliability or competence of AI based on confident presentation and successful past use.",
+              "cross_links": [
+                "Trust and Reliance Miscalibration"
+              ],
+              "confidence": "high",
+              "status": "accepted-leaf"
+            }
+          ]
+        }
+      ],
+      "support_pages": [
+        {
+          "top_level_category": "Mind-Perception and Capability Illusions",
+          "public_label": "We mistake AI for understanding more than it does",
+          "failure_point": "how we misunderstand what the AI is",
+          "subcategory": "support",
+          "wikipedia_page_title": "Social presence theory",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Social_presence_theory",
+          "why_it_fits": "Useful background for why interfaces feel socially real, but broader than the core attribution effects.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Mind-Perception and Capability Illusions",
+          "public_label": "We mistake AI for understanding more than it does",
+          "failure_point": "how we misunderstand what the AI is",
+          "subcategory": "support",
+          "wikipedia_page_title": "Pareidolia",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Pareidolia",
+          "why_it_fits": "Helpful for agency-attribution analogies, but less directly about human-AI interaction than the accepted leaves.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Mind-Perception and Capability Illusions",
+          "public_label": "We mistake AI for understanding more than it does",
+          "failure_point": "how we misunderstand what the AI is",
+          "subcategory": "support",
+          "wikipedia_page_title": "Mental model",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Mental_model",
+          "why_it_fits": "Useful background for mistaken beliefs about how AI works, but not itself a bias page.",
+          "cross_links": [],
+          "confidence": "medium",
+          "status": "accepted-support"
+        },
+        {
+          "top_level_category": "Mind-Perception and Capability Illusions",
+          "public_label": "We mistake AI for understanding more than it does",
+          "failure_point": "how we misunderstand what the AI is",
+          "subcategory": "support",
+          "wikipedia_page_title": "False consensus effect",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/False_consensus_effect",
+          "why_it_fits": "Possible fit for assuming AI outputs mirror what most people think, but weaker than the core capability-illusion concepts.",
+          "cross_links": [
+            "Belief Reinforcement and Selective Uptake"
+          ],
+          "confidence": "low",
+          "status": "accepted-support"
+        }
+      ]
+    }
+  ],
+  "candidate_inventory": [
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Over-reliance and deference",
+      "wikipedia_page_title": "Automation bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Automation_bias",
+      "why_it_fits": "The canonical page for over-weighting automated recommendations and discounting contradictory non-automated evidence.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Over-reliance and deference",
+      "wikipedia_page_title": "Authority bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Authority_bias",
+      "why_it_fits": "Explains why system labels, confident answers, and expert framing can trigger deference to AI output.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Credibility shortcuts",
+      "wikipedia_page_title": "Fluency heuristic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fluency_heuristic",
+      "why_it_fits": "Captures the shortcut where easy-to-process answers feel more credible, a common response to polished AI output.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Credibility shortcuts",
+      "wikipedia_page_title": "Halo effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halo_effect",
+      "why_it_fits": "Explains how one positive surface trait, such as polished language or interface design, can inflate trust in the whole system.",
+      "cross_links": [
+        "Mind-Perception and Capability Illusions"
+      ],
+      "confidence": "medium",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Monitoring collapse",
+      "wikipedia_page_title": "Out-of-the-loop performance problem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Out-of-the-loop_performance_problem",
+      "why_it_fits": "Directly describes performance loss when automation is trusted enough that people stop actively supervising it.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Monitoring collapse",
+      "wikipedia_page_title": "Vigilance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vigilance",
+      "why_it_fits": "Relevant because sustained monitoring deteriorates when AI handles routine tasks, making misses harder to catch.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Resistance and backlash",
+      "wikipedia_page_title": "Algorithm aversion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
+      "why_it_fits": "Provides the clearest anchor for under-trust and rejection of algorithmic advice after observed error or perceived threat.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "Resistance and backlash",
+      "wikipedia_page_title": "Reactance (psychology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reactance_(psychology)",
+      "why_it_fits": "Explains resistance when AI recommendations feel controlling, autonomy-limiting, or imposed.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "support",
+      "wikipedia_page_title": "Trust (social science)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trust_(social_science)",
+      "why_it_fits": "Useful background for trust calibration, but too broad to serve as a codex leaf on its own.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "support",
+      "wikipedia_page_title": "Credibility",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Credibility",
+      "why_it_fits": "Useful for source-believability framing, but broader and less bias-specific than the accepted leaves.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "support",
+      "wikipedia_page_title": "Situation awareness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Situation_awareness",
+      "why_it_fits": "Helpful for explaining lost oversight under automation, but not itself a human-AI bias concept.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Trust and Reliance Miscalibration",
+      "public_label": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "subcategory": "support",
+      "wikipedia_page_title": "Learned helplessness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Learned_helplessness",
+      "why_it_fits": "Relevant to dependence and reduced initiative, but more indirect than the core reliance pages.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Confirmation-preserving interpretation",
+      "wikipedia_page_title": "Confirmation bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+      "why_it_fits": "The central concept for interpreting AI output in ways that confirm prior views and discount disconfirming material.",
+      "cross_links": [
+        "Mind-Perception and Capability Illusions"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Confirmation-preserving interpretation",
+      "wikipedia_page_title": "Motivated reasoning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Motivated_reasoning",
+      "why_it_fits": "Explains why people can use AI as a justification engine for desired conclusions rather than as a neutral check.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Selective intake and avoidance",
+      "wikipedia_page_title": "Selective exposure theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_exposure_theory",
+      "why_it_fits": "Directly captures the tendency to seek AI outputs that align with existing beliefs and avoid contradictory answers.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Selective intake and avoidance",
+      "wikipedia_page_title": "Selective perception",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_perception",
+      "why_it_fits": "Relevant because people can notice agreeable parts of AI output while overlooking the parts that challenge them.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Belief persistence and evidence filtering",
+      "wikipedia_page_title": "Belief perseverance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belief_perseverance",
+      "why_it_fits": "Explains why users may keep a belief even after AI or source material contradicts it.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Belief persistence and evidence filtering",
+      "wikipedia_page_title": "Cherry picking",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherry_picking",
+      "why_it_fits": "Fits because AI can make it easier to surface only the snippets or examples that support a chosen conclusion.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Reinforcement loops",
+      "wikipedia_page_title": "Echo chamber (media)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Echo_chamber_(media)",
+      "why_it_fits": "Captures closed loops where repeated, like-minded AI-mediated content strengthens prior beliefs.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "Reinforcement loops",
+      "wikipedia_page_title": "Filter bubble",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Filter_bubble",
+      "why_it_fits": "Explains how personalized ranking and curation narrow the range of views users encounter through AI systems.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "support",
+      "wikipedia_page_title": "Illusory truth effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Illusory_truth_effect",
+      "why_it_fits": "Useful for repeated AI phrasing that starts to feel true, but narrower than the core accepted leaves.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "high",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "support",
+      "wikipedia_page_title": "Availability cascade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_cascade",
+      "why_it_fits": "Helpful for social repetition effects, but more collective than the main belief-updating leaves.",
+      "cross_links": [
+        "Judgment Steering by Anchors and Frames"
+      ],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "support",
+      "wikipedia_page_title": "Bias blind spot",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bias_blind_spot",
+      "why_it_fits": "Useful for why users think others are misled by AI while assuming they themselves are objective.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Belief Reinforcement and Selective Uptake",
+      "public_label": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "subcategory": "support",
+      "wikipedia_page_title": "Source-monitoring error",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Source-monitoring_error",
+      "why_it_fits": "Useful for forgetting whether a claim came from the model, a source, or the user's own memory.",
+      "cross_links": [
+        "Mind-Perception and Capability Illusions"
+      ],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Reference-point effects",
+      "wikipedia_page_title": "Anchoring effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+      "why_it_fits": "A direct fit for how initial AI suggestions, estimates, or ranges shift subsequent human judgment.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Reference-point effects",
+      "wikipedia_page_title": "Framing effect (psychology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+      "why_it_fits": "Captures how equivalent AI outputs can lead to different decisions depending on wording and presentation.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Defaults and comparative choice steering",
+      "wikipedia_page_title": "Default effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Default_effect",
+      "why_it_fits": "Relevant to model defaults, suggested prompts, and preselected actions that users tend to accept.",
+      "cross_links": [
+        "Trust and Reliance Miscalibration"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Defaults and comparative choice steering",
+      "wikipedia_page_title": "Decoy effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Decoy_effect",
+      "why_it_fits": "Fits AI-mediated option sets where adding one comparison shifts preference toward a target choice.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Salience and retrieval effects",
+      "wikipedia_page_title": "Availability heuristic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+      "why_it_fits": "Explains why AI-highlighted examples or repeatedly surfaced cases feel more representative than they are.",
+      "cross_links": [
+        "Belief Reinforcement and Selective Uptake"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Salience and retrieval effects",
+      "wikipedia_page_title": "Attentional bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Attentional_bias",
+      "why_it_fits": "Fits interface-driven emphasis, ranking, and highlighting that steer what users notice first.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Prompting and designed influence",
+      "wikipedia_page_title": "Priming (psychology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Priming_(psychology)",
+      "why_it_fits": "Useful for subtle cueing from prompts, examples, and system context that shifts later responses and decisions.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "Prompting and designed influence",
+      "wikipedia_page_title": "Choice architecture",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Choice_architecture",
+      "why_it_fits": "Provides the broad design framework for how AI interfaces structure the options users end up choosing among.",
+      "cross_links": [
+        "Trust and Reliance Miscalibration"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "support",
+      "wikipedia_page_title": "Nudge theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nudge_theory",
+      "why_it_fits": "Useful for intentional steering language, but broader and more policy-oriented than the core leaves.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "support",
+      "wikipedia_page_title": "Mere-exposure effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mere-exposure_effect",
+      "why_it_fits": "Relevant to repeated AI suggestions, but more indirect than the main choice-shaping concepts.",
+      "cross_links": [
+        "Belief Reinforcement and Selective Uptake"
+      ],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "support",
+      "wikipedia_page_title": "Processing fluency",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Processing_fluency",
+      "why_it_fits": "Useful for polished output that feels right because it is easy to read, but it also overlaps strongly with trust calibration.",
+      "cross_links": [
+        "Trust and Reliance Miscalibration"
+      ],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Judgment Steering by Anchors and Frames",
+      "public_label": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "subcategory": "support",
+      "wikipedia_page_title": "Identifiable victim effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Identifiable_victim_effect",
+      "why_it_fits": "Useful for vivid AI-generated cases that skew judgment, but narrower than the core design-level effects.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Human-likeness attribution",
+      "wikipedia_page_title": "Anthropomorphism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anthropomorphism",
+      "why_it_fits": "The foundational concept for attributing human traits, motives, or feelings to non-human systems.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Human-likeness attribution",
+      "wikipedia_page_title": "AI anthropomorphism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
+      "why_it_fits": "The most direct page for applying anthropomorphic attribution specifically to AI systems.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Social and agentic projection",
+      "wikipedia_page_title": "ELIZA effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/ELIZA_effect",
+      "why_it_fits": "Directly explains why conversational fluency can make users over-attribute understanding or empathy to AI.",
+      "cross_links": [
+        "Trust and Reliance Miscalibration"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Social and agentic projection",
+      "wikipedia_page_title": "Computers are social actors",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Computers_are_social_actors",
+      "why_it_fits": "Captures the HCI finding that people automatically apply social heuristics to computers and agents.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Mind and intent attribution",
+      "wikipedia_page_title": "Intentional stance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Intentional_stance",
+      "why_it_fits": "Useful for interpreting AI behavior as if the system has beliefs, goals, or intentions of its own.",
+      "cross_links": [],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Mind and intent attribution",
+      "wikipedia_page_title": "Mind projection fallacy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mind_projection_fallacy",
+      "why_it_fits": "Explains the error of projecting one's own interpretation onto the world, including onto model output and behavior.",
+      "cross_links": [
+        "Belief Reinforcement and Selective Uptake"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Capability overestimation",
+      "wikipedia_page_title": "Illusion of explanatory depth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth",
+      "why_it_fits": "Fits cases where users think either they or the model understand a topic more deeply than is actually true.",
+      "cross_links": [
+        "Trust and Reliance Miscalibration"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "Capability overestimation",
+      "wikipedia_page_title": "Overconfidence effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overconfidence_effect",
+      "why_it_fits": "Relevant to overestimating the reliability or competence of AI based on confident presentation and successful past use.",
+      "cross_links": [
+        "Trust and Reliance Miscalibration"
+      ],
+      "confidence": "high",
+      "status": "accepted-leaf"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "support",
+      "wikipedia_page_title": "Social presence theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Social_presence_theory",
+      "why_it_fits": "Useful background for why interfaces feel socially real, but broader than the core attribution effects.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "support",
+      "wikipedia_page_title": "Pareidolia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pareidolia",
+      "why_it_fits": "Helpful for agency-attribution analogies, but less directly about human-AI interaction than the accepted leaves.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "support",
+      "wikipedia_page_title": "Mental model",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mental_model",
+      "why_it_fits": "Useful background for mistaken beliefs about how AI works, but not itself a bias page.",
+      "cross_links": [],
+      "confidence": "medium",
+      "status": "accepted-support"
+    },
+    {
+      "top_level_category": "Mind-Perception and Capability Illusions",
+      "public_label": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "subcategory": "support",
+      "wikipedia_page_title": "False consensus effect",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/False_consensus_effect",
+      "why_it_fits": "Possible fit for assuming AI outputs mirror what most people think, but weaker than the core capability-illusion concepts.",
+      "cross_links": [
+        "Belief Reinforcement and Selective Uptake"
+      ],
+      "confidence": "low",
+      "status": "accepted-support"
+    }
+  ],
+  "pages_considered_but_rejected": [
+    {
+      "wikipedia_page_title": "Hallucination (artificial intelligence)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+      "reason": "Important AI failure mode, but it describes model behavior more than a human judgment distortion."
+    },
+    {
+      "wikipedia_page_title": "Algorithmic bias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithmic_bias",
+      "reason": "Primarily about unfair sociotechnical outcomes rather than user cognition or interaction bias."
+    },
+    {
+      "wikipedia_page_title": "Fairness (machine learning)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairness_(machine_learning)",
+      "reason": "Useful governance background, but not a human-AI interaction bias concept."
+    },
+    {
+      "wikipedia_page_title": "Chinese room",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_room",
+      "reason": "Philosophically important, but too abstract and debate-driven for a clean codex leaf."
+    },
+    {
+      "wikipedia_page_title": "Turing test",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turing_test",
+      "reason": "Historically important, but it is a benchmark frame rather than a recurring human judgment error."
+    },
+    {
+      "wikipedia_page_title": "Recommender system",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recommender_system",
+      "reason": "Describes a system type, not a bias or heuristic in user judgment."
+    },
+    {
+      "wikipedia_page_title": "Human-AI interaction",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Human-AI_interaction",
+      "reason": "Too broad to serve as a leaf-level codex concept."
+    },
+    {
+      "wikipedia_page_title": "Stochastic parrot",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stochastic_parrot",
+      "reason": "A useful critique, but not a canonical cognitive or interaction-bias page."
+    },
+    {
+      "wikipedia_page_title": "Symbol grounding problem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symbol_grounding_problem",
+      "reason": "Important theoretical background, but too far from a user-facing misjudgment pattern."
+    },
+    {
+      "wikipedia_page_title": "Explainable artificial intelligence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence",
+      "reason": "A design and research field rather than a human interaction bias."
+    },
+    {
+      "wikipedia_page_title": "Black box",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_box",
+      "reason": "Describes opacity, not a human judgment distortion."
+    },
+    {
+      "wikipedia_page_title": "Targeted advertising",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Targeted_advertising",
+      "reason": "Too broad and marketing-specific for this codex taxonomy."
+    }
+  ]
+}

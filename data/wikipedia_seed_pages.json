@@ -1,64 +1,175 @@
 {
-  "seed_pages": [
+  "mission": "Curate a Wikipedia-backed taxonomy of human judgment distortions in human-AI interaction.",
+  "categories": [
     {
-      "title": "Human-AI interaction",
-      "url": "https://en.wikipedia.org/wiki/Human-AI_interaction",
-      "note": "Broad discovery hub for interaction effects, perception, and social dynamics."
+      "id": "trust-reliance-miscalibration",
+      "title": "Trust and Reliance Miscalibration",
+      "display_title": "We trust AI too much or too little",
+      "failure_point": "whether we follow AI appropriately",
+      "seed_pages": [
+        {
+          "title": "Automation bias",
+          "url": "https://en.wikipedia.org/wiki/Automation_bias",
+          "subcategory": "Over-reliance and deference",
+          "note": "Primary hub for over-trust, misuse, complacency, and monitoring failures."
+        },
+        {
+          "title": "Algorithm aversion",
+          "url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
+          "subcategory": "Resistance and backlash",
+          "note": "Anchor page for distrust, backlash, and reluctance to rely on algorithmic advice."
+        },
+        {
+          "title": "Authority bias",
+          "url": "https://en.wikipedia.org/wiki/Authority_bias",
+          "subcategory": "Credibility shortcuts",
+          "note": "Captures deference to labels, expertise signals, and system authority cues."
+        },
+        {
+          "title": "Out-of-the-loop performance problem",
+          "url": "https://en.wikipedia.org/wiki/Out-of-the-loop_performance_problem",
+          "subcategory": "Monitoring collapse",
+          "note": "Useful for vigilance loss and reduced oversight after trust is established."
+        }
+      ]
     },
     {
-      "title": "Automation bias",
-      "url": "https://en.wikipedia.org/wiki/Automation_bias",
-      "note": "Primary hub for over-reliance, misuse, omission, commission, and complacency."
+      "id": "belief-reinforcement-selective-uptake",
+      "title": "Belief Reinforcement and Selective Uptake",
+      "display_title": "We use AI to confirm what we already believe",
+      "failure_point": "how our prior beliefs shape what we take from AI",
+      "seed_pages": [
+        {
+          "title": "Confirmation bias",
+          "url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+          "subcategory": "Confirmation-preserving interpretation",
+          "note": "Primary hub for confirmatory interpretation and evidence selection."
+        },
+        {
+          "title": "Selective exposure theory",
+          "url": "https://en.wikipedia.org/wiki/Selective_exposure_theory",
+          "subcategory": "Selective intake",
+          "note": "Best seed for choosing agreeable content and avoiding contradiction."
+        },
+        {
+          "title": "Motivated reasoning",
+          "url": "https://en.wikipedia.org/wiki/Motivated_reasoning",
+          "subcategory": "Motivated uptake",
+          "note": "Captures goal-directed interpretation of AI output."
+        },
+        {
+          "title": "Belief perseverance",
+          "url": "https://en.wikipedia.org/wiki/Belief_perseverance",
+          "subcategory": "Belief persistence",
+          "note": "Anchor page for sticking with beliefs after contradiction."
+        },
+        {
+          "title": "Echo chamber (media)",
+          "url": "https://en.wikipedia.org/wiki/Echo_chamber_(media)",
+          "subcategory": "Reinforcement loops",
+          "note": "Useful for repetition and social reinforcement loops in AI-mediated feeds."
+        },
+        {
+          "title": "Filter bubble",
+          "url": "https://en.wikipedia.org/wiki/Filter_bubble",
+          "subcategory": "Reinforcement loops",
+          "note": "Covers personalization-driven narrowing of exposure."
+        }
+      ]
     },
     {
-      "title": "Algorithm aversion",
-      "url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
-      "note": "Primary hub for aversion, appreciation, transparency, and accountability concerns."
+      "id": "judgment-steering-anchors-frames",
+      "title": "Judgment Steering by Anchors and Frames",
+      "display_title": "AI's suggestions steer our choices",
+      "failure_point": "how AI presentation shapes our choices",
+      "seed_pages": [
+        {
+          "title": "Anchoring effect",
+          "url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+          "subcategory": "Reference-point effects",
+          "note": "Core page for judgments shifted by an initial value or suggestion."
+        },
+        {
+          "title": "Framing effect (psychology)",
+          "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+          "subcategory": "Presentation effects",
+          "note": "Captures decision shifts caused by wording and presentation."
+        },
+        {
+          "title": "Default effect",
+          "url": "https://en.wikipedia.org/wiki/Default_effect",
+          "subcategory": "Defaults and interface steering",
+          "note": "Primary page for preselected choices and low-friction acceptance."
+        },
+        {
+          "title": "Decoy effect",
+          "url": "https://en.wikipedia.org/wiki/Decoy_effect",
+          "subcategory": "Comparative choice steering",
+          "note": "Useful for option-set design that nudges users toward one choice."
+        },
+        {
+          "title": "Priming (psychology)",
+          "url": "https://en.wikipedia.org/wiki/Priming_(psychology)",
+          "subcategory": "Prompting and cueing",
+          "note": "Covers subtle cueing from wording, examples, and interface context."
+        },
+        {
+          "title": "Choice architecture",
+          "url": "https://en.wikipedia.org/wiki/Choice_architecture",
+          "subcategory": "Designed influence",
+          "note": "Broad but useful hub for AI interface design shaping downstream choices."
+        },
+        {
+          "title": "Nudge theory",
+          "url": "https://en.wikipedia.org/wiki/Nudge_theory",
+          "subcategory": "Designed influence",
+          "note": "Useful support seed for intentional steering in system design."
+        }
+      ]
     },
     {
-      "title": "AI anthropomorphism",
-      "url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
-      "note": "Hub for human-likeness cues, social attribution, and personification of AI."
-    },
-    {
-      "title": "ELIZA effect",
-      "url": "https://en.wikipedia.org/wiki/ELIZA_effect",
-      "note": "Hub for conversational over-attribution to machine outputs."
-    },
-    {
-      "title": "Hallucination (artificial intelligence)",
-      "url": "https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29",
-      "note": "Hub for confident error, confabulation, and false certainty in LLM output."
-    },
-    {
-      "title": "Sycophancy",
-      "url": "https://en.wikipedia.org/wiki/Sycophancy",
-      "note": "Hub for agreement-seeking behavior and user-confirming model responses."
-    },
-    {
-      "title": "Algorithmic bias",
-      "url": "https://en.wikipedia.org/wiki/Algorithmic_bias",
-      "note": "Hub for stereotyping, representational harms, and fairness failures in user-facing systems."
-    },
-    {
-      "title": "Fairness (machine learning)",
-      "url": "https://en.wikipedia.org/wiki/Fairness_%28machine_learning%29",
-      "note": "Hub for fairness framing, protected attributes, and mitigation discourse."
-    },
-    {
-      "title": "Filter bubble",
-      "url": "https://en.wikipedia.org/wiki/Filter_bubble",
-      "note": "Hub for personalization, ranking, curation, and narrowed exposure."
-    },
-    {
-      "title": "Echo chamber (media)",
-      "url": "https://en.wikipedia.org/wiki/Echo_chamber_%28media%29",
-      "note": "Hub for belief reinforcement through repeated, like-minded content."
-    },
-    {
-      "title": "Authority bias",
-      "url": "https://en.wikipedia.org/wiki/Authority_bias",
-      "note": "Hub for credibility shortcuts that transfer well to AI interfaces."
+      "id": "mind-perception-capability-illusions",
+      "title": "Mind-Perception and Capability Illusions",
+      "display_title": "We mistake AI for understanding more than it does",
+      "failure_point": "how we misunderstand what the AI is",
+      "seed_pages": [
+        {
+          "title": "AI anthropomorphism",
+          "url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
+          "subcategory": "Human-likeness attribution",
+          "note": "Best direct page for attributing human traits to AI systems."
+        },
+        {
+          "title": "Anthropomorphism",
+          "url": "https://en.wikipedia.org/wiki/Anthropomorphism",
+          "subcategory": "Human-likeness attribution",
+          "note": "Canonical general concept behind human-like attribution."
+        },
+        {
+          "title": "ELIZA effect",
+          "url": "https://en.wikipedia.org/wiki/ELIZA_effect",
+          "subcategory": "False understanding",
+          "note": "Anchor page for over-attributing understanding to conversational systems."
+        },
+        {
+          "title": "Intentional stance",
+          "url": "https://en.wikipedia.org/wiki/Intentional_stance",
+          "subcategory": "Mind and intent attribution",
+          "note": "Captures reading goals, beliefs, and intentions into system behavior."
+        },
+        {
+          "title": "Computers are social actors",
+          "url": "https://en.wikipedia.org/wiki/Computers_are_social_actors",
+          "subcategory": "Social attribution",
+          "note": "HCI-native page for applying human social heuristics to computers."
+        },
+        {
+          "title": "Illusion of explanatory depth",
+          "url": "https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth",
+          "subcategory": "Capability overestimation",
+          "note": "Useful for users overstating how well they or the AI understand a topic."
+        }
+      ]
     }
   ]
 }
