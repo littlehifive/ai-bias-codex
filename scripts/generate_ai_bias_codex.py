@@ -109,6 +109,8 @@ def curve_between(cx, cy, start_radius, start_angle, end_radius, end_angle):
 
 
 def leaf_display_label(leaf):
+    if leaf.get("display_label"):
+        return leaf["display_label"]
     return DISPLAY_LABEL_OVERRIDES.get(leaf["bias_name"], leaf["bias_name"])
 
 

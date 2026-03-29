@@ -78,6 +78,8 @@ def wrap_lines(text, width):
 
 
 def display_label(leaf):
+    if leaf.get("display_label"):
+        return leaf["display_label"]
     return DISPLAY_LABEL_OVERRIDES.get(leaf["bias_name"], leaf["bias_name"])
 
 
@@ -158,6 +160,7 @@ def rewrite_leaf_anchor(anchor_block, leaf=None, hide=False):
     label = display_label(leaf)
     label_lines = wrap_lines(label, 20)
     updated = replace_text_block(updated, text_id, label_lines)
+
     return updated
 
 

@@ -70,6 +70,23 @@ def fetch_links(title):
     return links
 
 
+def canonical_page(title):
+    params = {
+        "action": "query",
+        "titles": title,
+        "format": "json",
+        "redirects": 1,
+    }
+    payload = fetch_json(params)
+    pages = payload.get("query", {}).get("pages", {})
+    page = next(iter(pages.values()))
+    page_title = page.get("title", title)
+    return {
+        "title": page_title,
+        "url": f'https://en.wikipedia.org/wiki/{urllib.parse.quote(page_title.replace(" ", "_"))}',
+    }
+
+
 def load_categories(config):
     if "categories" in config:
         return config["categories"]
@@ -96,7 +113,9 @@ def dedupe_category_links(seed_pages):
                     "title": link["title"],
                     "url": link["url"],
                     "source_seed_titles": [],
+                    "source_exact_candidate_titles": [],
                     "source_subcategories": [],
+                    "discovery_methods": [],
                 },
             )
             if seed["title"] not in candidate["source_seed_titles"]:
@@ -104,9 +123,38 @@ def dedupe_category_links(seed_pages):
             subcategory = seed.get("subcategory", "")
             if subcategory and subcategory not in candidate["source_subcategories"]:
                 candidate["source_subcategories"].append(subcategory)
+            if "linked-from-seed" not in candidate["discovery_methods"]:
+                candidate["discovery_methods"].append("linked-from-seed")
+    return deduped
+
+
+def merge_exact_candidates(deduped, exact_candidates):
+    for candidate in exact_candidates:
+        page = canonical_page(candidate["title"])
+        merged = deduped.setdefault(
+            page["title"],
+            {
+                "title": page["title"],
+                "url": page["url"],
+                "source_seed_titles": [],
+                "source_exact_candidate_titles": [],
+                "source_subcategories": [],
+                "discovery_methods": [],
+            },
+        )
+        if candidate["title"] not in merged["source_exact_candidate_titles"]:
+            merged["source_exact_candidate_titles"].append(candidate["title"])
+        subcategory = candidate.get("subcategory", "")
+        if subcategory and subcategory not in merged["source_subcategories"]:
+            merged["source_subcategories"].append(subcategory)
+        if "exact-candidate" not in merged["discovery_methods"]:
+            merged["discovery_methods"].append("exact-candidate")
     return sorted(
         deduped.values(),
-        key=lambda item: (-len(item["source_seed_titles"]), item["title"].lower()),
+        key=lambda item: (
+            -len(item["source_seed_titles"]) - len(item["source_exact_candidate_titles"]),
+            item["title"].lower(),
+        ),
     )
 
 
@@ -124,6 +172,7 @@ def main():
 
     for category in categories:
         scraped_seed_pages = []
+        scraped_exact_candidates = []
         seed_link_sets = []
         for seed in category["seed_pages"]:
             links = fetch_links(seed["title"])
@@ -147,7 +196,21 @@ def main():
             for link in links:
                 global_candidates[link["title"]].add(category["title"])
 
+        for exact in category.get("exact_candidates", []):
+            page = canonical_page(exact["title"])
+            scraped_exact_candidates.append(
+                {
+                    "title": page["title"],
+                    "url": page["url"],
+                    "requested_title": exact["title"],
+                    "subcategory": exact.get("subcategory", ""),
+                    "note": exact.get("note", ""),
+                }
+            )
+            global_candidates[page["title"]].add(category["title"])
+
         candidate_pages = dedupe_category_links(seed_link_sets)
+        candidate_pages = merge_exact_candidates(candidate_pages, category.get("exact_candidates", []))
         scraped_categories.append(
             {
                 "id": category.get("id", ""),
@@ -155,8 +218,10 @@ def main():
                 "display_title": category.get("display_title", category["title"]),
                 "failure_point": category.get("failure_point", ""),
                 "seed_pages": scraped_seed_pages,
+                "exact_candidates": scraped_exact_candidates,
                 "candidate_pages": candidate_pages,
                 "seed_page_count": len(scraped_seed_pages),
+                "exact_candidate_count": len(scraped_exact_candidates),
                 "candidate_count": len(candidate_pages),
             }
         )

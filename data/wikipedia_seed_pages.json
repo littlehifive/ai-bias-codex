@@ -1,5 +1,5 @@
 {
-  "mission": "Curate a Wikipedia-backed taxonomy of human judgment distortions in human-AI interaction.",
+  "mission": "Curate a Wikipedia-backed taxonomy of human judgment distortions in human-AI interaction, including interaction-relevant human cognitive biases and AI-system biases.",
   "categories": [
     {
       "id": "trust-reliance-miscalibration",
@@ -10,26 +10,76 @@
         {
           "title": "Automation bias",
           "url": "https://en.wikipedia.org/wiki/Automation_bias",
-          "subcategory": "Over-reliance and deference",
+          "subcategory": "Over-reliance and automation misuse",
           "note": "Primary hub for over-trust, misuse, complacency, and monitoring failures."
         },
         {
           "title": "Algorithm aversion",
           "url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
-          "subcategory": "Resistance and backlash",
+          "subcategory": "Distrust and resistance",
           "note": "Anchor page for distrust, backlash, and reluctance to rely on algorithmic advice."
         },
         {
           "title": "Authority bias",
           "url": "https://en.wikipedia.org/wiki/Authority_bias",
-          "subcategory": "Credibility shortcuts",
+          "subcategory": "Credibility and authority shortcuts",
           "note": "Captures deference to labels, expertise signals, and system authority cues."
         },
         {
           "title": "Out-of-the-loop performance problem",
           "url": "https://en.wikipedia.org/wiki/Out-of-the-loop_performance_problem",
-          "subcategory": "Monitoring collapse",
+          "subcategory": "Oversight and vigilance loss",
           "note": "Useful for vigilance loss and reduced oversight after trust is established."
+        },
+        {
+          "title": "Trust (social science)",
+          "url": "https://en.wikipedia.org/wiki/Trust_(social_science)",
+          "subcategory": "Calibration and control beliefs",
+          "note": "Helpful for framing reliance as calibration rather than blind acceptance or rejection."
+        }
+      ],
+      "exact_candidates": [
+        {
+          "title": "Algorithm appreciation",
+          "url": "https://en.wikipedia.org/wiki/Algorithm_appreciation",
+          "subcategory": "Over-reliance and automation misuse",
+          "note": "Directly captures preference for algorithmic judgment over human judgment."
+        },
+        {
+          "title": "Automation misuse",
+          "url": "https://en.wikipedia.org/wiki/Automation_misuse",
+          "subcategory": "Over-reliance and automation misuse",
+          "note": "Useful complement to automation bias for overdependence on automated systems."
+        },
+        {
+          "title": "Argument from authority",
+          "url": "https://en.wikipedia.org/wiki/Argument_from_authority",
+          "subcategory": "Credibility and authority shortcuts",
+          "note": "Fits when AI output is accepted because it sounds authoritative rather than because it is checked."
+        },
+        {
+          "title": "Advice discounting",
+          "url": "https://en.wikipedia.org/wiki/Advice_discounting",
+          "subcategory": "Distrust and resistance",
+          "note": "Useful for underweighting outside advice, including machine advice."
+        },
+        {
+          "title": "Automation surprise",
+          "url": "https://en.wikipedia.org/wiki/Automation_surprise",
+          "subcategory": "Oversight and vigilance loss",
+          "note": "Captures confusion when automated behavior diverges from the user's expectation."
+        },
+        {
+          "title": "Explainable artificial intelligence",
+          "url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence",
+          "subcategory": "Calibration and control beliefs",
+          "note": "Important contextual page when explanation changes user trust or overconfidence."
+        },
+        {
+          "title": "Complacency",
+          "url": "https://en.wikipedia.org/wiki/Complacency",
+          "subcategory": "Oversight and vigilance loss",
+          "note": "Useful general page for reduced checking once a system seems reliable."
         }
       ]
     },
@@ -42,38 +92,112 @@
         {
           "title": "Confirmation bias",
           "url": "https://en.wikipedia.org/wiki/Confirmation_bias",
-          "subcategory": "Confirmation-preserving interpretation",
+          "subcategory": "Confirmation and motivated interpretation",
           "note": "Primary hub for confirmatory interpretation and evidence selection."
         },
         {
           "title": "Selective exposure theory",
           "url": "https://en.wikipedia.org/wiki/Selective_exposure_theory",
-          "subcategory": "Selective intake",
+          "subcategory": "Selective search and evidence filtering",
           "note": "Best seed for choosing agreeable content and avoiding contradiction."
         },
         {
           "title": "Motivated reasoning",
           "url": "https://en.wikipedia.org/wiki/Motivated_reasoning",
-          "subcategory": "Motivated uptake",
+          "subcategory": "Confirmation and motivated interpretation",
           "note": "Captures goal-directed interpretation of AI output."
         },
         {
           "title": "Belief perseverance",
           "url": "https://en.wikipedia.org/wiki/Belief_perseverance",
-          "subcategory": "Belief persistence",
+          "subcategory": "Selective search and evidence filtering",
           "note": "Anchor page for sticking with beliefs after contradiction."
         },
         {
           "title": "Echo chamber (media)",
           "url": "https://en.wikipedia.org/wiki/Echo_chamber_(media)",
-          "subcategory": "Reinforcement loops",
+          "subcategory": "Repetition and feed reinforcement",
           "note": "Useful for repetition and social reinforcement loops in AI-mediated feeds."
         },
         {
           "title": "Filter bubble",
           "url": "https://en.wikipedia.org/wiki/Filter_bubble",
-          "subcategory": "Reinforcement loops",
+          "subcategory": "Repetition and feed reinforcement",
           "note": "Covers personalization-driven narrowing of exposure."
+        },
+        {
+          "title": "Stereotype",
+          "url": "https://en.wikipedia.org/wiki/Stereotype",
+          "subcategory": "Stereotypes and group generalization",
+          "note": "Foundational page for generalized beliefs that AI can amplify and legitimize."
+        },
+        {
+          "title": "Algorithmic bias",
+          "url": "https://en.wikipedia.org/wiki/Algorithmic_bias",
+          "subcategory": "Data and historical pattern carry-over",
+          "note": "Useful when historical patterns in data become authoritative to users through AI systems."
+        }
+      ],
+      "exact_candidates": [
+        {
+          "title": "Selection bias",
+          "url": "https://en.wikipedia.org/wiki/Selection_bias",
+          "subcategory": "Data and historical pattern carry-over",
+          "note": "Key concept for skewed data entering AI systems and then shaping downstream beliefs."
+        },
+        {
+          "title": "Sampling bias",
+          "url": "https://en.wikipedia.org/wiki/Sampling_bias",
+          "subcategory": "Data and historical pattern carry-over",
+          "note": "Captures non-representative data as a mechanism behind biased AI outputs."
+        },
+        {
+          "title": "Measurement bias",
+          "url": "https://en.wikipedia.org/wiki/Measurement_bias",
+          "subcategory": "Data and historical pattern carry-over",
+          "note": "Useful when proxies and measurements distort what the AI appears to know."
+        },
+        {
+          "title": "Implicit stereotype",
+          "url": "https://en.wikipedia.org/wiki/Implicit_stereotype",
+          "subcategory": "Stereotypes and group generalization",
+          "note": "Covers unconscious group associations that can be reinforced by AI outputs."
+        },
+        {
+          "title": "Out-group homogeneity",
+          "url": "https://en.wikipedia.org/wiki/Out-group_homogeneity",
+          "subcategory": "Stereotypes and group generalization",
+          "note": "Relevant for systems and users collapsing diverse out-groups into overgeneralized categories."
+        },
+        {
+          "title": "Belief bias",
+          "url": "https://en.wikipedia.org/wiki/Belief_bias",
+          "subcategory": "Confirmation and motivated interpretation",
+          "note": "Useful when believable-seeming AI output is accepted despite weak reasoning."
+        },
+        {
+          "title": "Bias blind spot",
+          "url": "https://en.wikipedia.org/wiki/Bias_blind_spot",
+          "subcategory": "Confirmation and motivated interpretation",
+          "note": "Important for users recognizing bias in AI critics or others before recognizing it in themselves."
+        },
+        {
+          "title": "False consensus effect",
+          "url": "https://en.wikipedia.org/wiki/False_consensus_effect",
+          "subcategory": "Stereotypes and group generalization",
+          "note": "Fits cases where AI mirroring a user's views makes them seem widely shared."
+        },
+        {
+          "title": "Schema (psychology)",
+          "url": "https://en.wikipedia.org/wiki/Schema_(psychology)",
+          "subcategory": "Stereotypes and group generalization",
+          "note": "Useful for the generalized templates through which users interpret AI outputs and social groups."
+        },
+        {
+          "title": "Fairness (machine learning)",
+          "url": "https://en.wikipedia.org/wiki/Fairness_(machine_learning)",
+          "subcategory": "Data and historical pattern carry-over",
+          "note": "Context page for how AI bias is evaluated and contested once users rely on its outputs."
         }
       ]
     },
@@ -86,44 +210,112 @@
         {
           "title": "Anchoring effect",
           "url": "https://en.wikipedia.org/wiki/Anchoring_effect",
-          "subcategory": "Reference-point effects",
+          "subcategory": "Anchors and first suggestions",
           "note": "Core page for judgments shifted by an initial value or suggestion."
         },
         {
           "title": "Framing effect (psychology)",
           "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
-          "subcategory": "Presentation effects",
+          "subcategory": "Frames and fluency cues",
           "note": "Captures decision shifts caused by wording and presentation."
         },
         {
           "title": "Default effect",
           "url": "https://en.wikipedia.org/wiki/Default_effect",
-          "subcategory": "Defaults and interface steering",
+          "subcategory": "Defaults and status quo steering",
           "note": "Primary page for preselected choices and low-friction acceptance."
         },
         {
           "title": "Decoy effect",
           "url": "https://en.wikipedia.org/wiki/Decoy_effect",
-          "subcategory": "Comparative choice steering",
+          "subcategory": "Option-set design and nudges",
           "note": "Useful for option-set design that nudges users toward one choice."
         },
         {
           "title": "Priming (psychology)",
           "url": "https://en.wikipedia.org/wiki/Priming_(psychology)",
-          "subcategory": "Prompting and cueing",
+          "subcategory": "Anchors and first suggestions",
           "note": "Covers subtle cueing from wording, examples, and interface context."
         },
         {
           "title": "Choice architecture",
           "url": "https://en.wikipedia.org/wiki/Choice_architecture",
-          "subcategory": "Designed influence",
+          "subcategory": "Defaults and status quo steering",
           "note": "Broad but useful hub for AI interface design shaping downstream choices."
         },
         {
           "title": "Nudge theory",
           "url": "https://en.wikipedia.org/wiki/Nudge_theory",
-          "subcategory": "Designed influence",
+          "subcategory": "Option-set design and nudges",
           "note": "Useful support seed for intentional steering in system design."
+        },
+        {
+          "title": "Availability heuristic",
+          "url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+          "subcategory": "Salience and social cues",
+          "note": "Important when surfaced examples disproportionately shape perceived relevance or risk."
+        }
+      ],
+      "exact_candidates": [
+        {
+          "title": "Attribute substitution",
+          "url": "https://en.wikipedia.org/wiki/Attribute_substitution",
+          "subcategory": "Anchors and first suggestions",
+          "note": "Useful when people replace a hard judgment with an easier cue supplied by the interface."
+        },
+        {
+          "title": "Processing fluency",
+          "url": "https://en.wikipedia.org/wiki/Processing_fluency",
+          "subcategory": "Frames and fluency cues",
+          "note": "Useful for answers that feel more persuasive because they are easier to process."
+        },
+        {
+          "title": "Mere-exposure effect",
+          "url": "https://en.wikipedia.org/wiki/Mere-exposure_effect",
+          "subcategory": "Frames and fluency cues",
+          "note": "Fits when repeated interface exposure makes options feel safer or better."
+        },
+        {
+          "title": "Identifiable victim effect",
+          "url": "https://en.wikipedia.org/wiki/Identifiable_victim_effect",
+          "subcategory": "Frames and fluency cues",
+          "note": "Captures how vivid examples can outweigh broader evidence in AI-mediated choices."
+        },
+        {
+          "title": "Status quo bias",
+          "url": "https://en.wikipedia.org/wiki/Status_quo_bias",
+          "subcategory": "Defaults and status quo steering",
+          "note": "Useful for preference inertia around preexisting or preselected AI options."
+        },
+        {
+          "title": "Compromise effect",
+          "url": "https://en.wikipedia.org/wiki/Compromise_effect",
+          "subcategory": "Option-set design and nudges",
+          "note": "Fits menus where the middle option appears safest because of comparison effects."
+        },
+        {
+          "title": "Context effect",
+          "url": "https://en.wikipedia.org/wiki/Context_effect",
+          "subcategory": "Option-set design and nudges",
+          "note": "Useful when surrounding options change how one recommendation is judged."
+        },
+        {
+          "title": "Attentional bias",
+          "url": "https://en.wikipedia.org/wiki/Attentional_bias",
+          "subcategory": "Salience and social cues",
+          "note": "Captures how highlighted or repeated interface cues dominate attention."
+        },
+        {
+          "title": "Social proof",
+          "url": "https://en.wikipedia.org/wiki/Social_proof",
+          "subcategory": "Salience and social cues",
+          "note": "Relevant when popularity or consensus cues make AI options feel normatively correct."
+        },
+        {
+          "title": "Recency bias",
+          "url": "https://en.wikipedia.org/wiki/Recency_bias",
+          "subcategory": "Salience and social cues",
+          "note": "Useful when later or freshest outputs outweigh stronger earlier evidence."
         }
       ]
     },
@@ -136,38 +328,118 @@
         {
           "title": "AI anthropomorphism",
           "url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
-          "subcategory": "Human-likeness attribution",
+          "subcategory": "Human-likeness cues",
           "note": "Best direct page for attributing human traits to AI systems."
         },
         {
           "title": "Anthropomorphism",
           "url": "https://en.wikipedia.org/wiki/Anthropomorphism",
-          "subcategory": "Human-likeness attribution",
+          "subcategory": "Human-likeness cues",
           "note": "Canonical general concept behind human-like attribution."
         },
         {
           "title": "ELIZA effect",
           "url": "https://en.wikipedia.org/wiki/ELIZA_effect",
-          "subcategory": "False understanding",
+          "subcategory": "Social presence and rapport",
           "note": "Anchor page for over-attributing understanding to conversational systems."
         },
         {
           "title": "Intentional stance",
           "url": "https://en.wikipedia.org/wiki/Intentional_stance",
-          "subcategory": "Mind and intent attribution",
+          "subcategory": "Mind and agency attribution",
           "note": "Captures reading goals, beliefs, and intentions into system behavior."
         },
         {
           "title": "Computers are social actors",
           "url": "https://en.wikipedia.org/wiki/Computers_are_social_actors",
-          "subcategory": "Social attribution",
+          "subcategory": "Social presence and rapport",
           "note": "HCI-native page for applying human social heuristics to computers."
         },
         {
           "title": "Illusion of explanatory depth",
           "url": "https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth",
-          "subcategory": "Capability overestimation",
+          "subcategory": "Capability and understanding overestimation",
           "note": "Useful for users overstating how well they or the AI understand a topic."
+        },
+        {
+          "title": "Social presence theory",
+          "url": "https://en.wikipedia.org/wiki/Social_presence_theory",
+          "subcategory": "Social presence and rapport",
+          "note": "Useful for the feeling that a digital agent is socially present and responsive."
+        }
+      ],
+      "exact_candidates": [
+        {
+          "title": "Theory of mind",
+          "url": "https://en.wikipedia.org/wiki/Theory_of_mind",
+          "subcategory": "Mind and agency attribution",
+          "note": "Useful when users extend ordinary mind-reading habits to AI systems."
+        },
+        {
+          "title": "Mind projection fallacy",
+          "url": "https://en.wikipedia.org/wiki/Mind_projection_fallacy",
+          "subcategory": "Mind and agency attribution",
+          "note": "Fits projecting subjective interpretations onto a system as if they were objective system properties."
+        },
+        {
+          "title": "Pareidolia",
+          "url": "https://en.wikipedia.org/wiki/Pareidolia",
+          "subcategory": "Mind and agency attribution",
+          "note": "Relevant when people perceive intention, emotion, or agency in ambiguous machine output."
+        },
+        {
+          "title": "Apophenia",
+          "url": "https://en.wikipedia.org/wiki/Apophenia",
+          "subcategory": "Pattern completion and false coherence",
+          "note": "Useful for perceiving meaningful patterns and hidden understanding where there is none."
+        },
+        {
+          "title": "Mental model",
+          "url": "https://en.wikipedia.org/wiki/Mental_model",
+          "subcategory": "Pattern completion and false coherence",
+          "note": "Useful when users fill in gaps about how AI works with oversimplified internal models."
+        },
+        {
+          "title": "Overconfidence effect",
+          "url": "https://en.wikipedia.org/wiki/Overconfidence_effect",
+          "subcategory": "Capability and understanding overestimation",
+          "note": "Captures unjustified confidence in judgments about what the system knows or can do."
+        },
+        {
+          "title": "Illusion of control",
+          "url": "https://en.wikipedia.org/wiki/Illusion_of_control",
+          "subcategory": "Capability and understanding overestimation",
+          "note": "Fits cases where users feel more command over AI outputs than they actually have."
+        },
+        {
+          "title": "Introspection illusion",
+          "url": "https://en.wikipedia.org/wiki/Introspection_illusion",
+          "subcategory": "Pattern completion and false coherence",
+          "note": "Useful when people over-trust their own explanations of what the AI is doing."
+        },
+        {
+          "title": "Personification",
+          "url": "https://en.wikipedia.org/wiki/Personification",
+          "subcategory": "Human-likeness cues",
+          "note": "Useful background for turning abstract or mechanical behavior into person-like behavior."
+        },
+        {
+          "title": "Animacy",
+          "url": "https://en.wikipedia.org/wiki/Animacy",
+          "subcategory": "Human-likeness cues",
+          "note": "Useful when lifelike cues make the system feel more agentic than it is."
+        },
+        {
+          "title": "Uncanny valley",
+          "url": "https://en.wikipedia.org/wiki/Uncanny_valley",
+          "subcategory": "Human-likeness cues",
+          "note": "Useful when near-human system behavior triggers strong mind-perception responses."
+        },
+        {
+          "title": "Agent detection",
+          "url": "https://en.wikipedia.org/wiki/Agent_detection",
+          "subcategory": "Mind and agency attribution",
+          "note": "Useful when people infer a purposeful agent behind ambiguous AI behavior."
         }
       ]
     }
