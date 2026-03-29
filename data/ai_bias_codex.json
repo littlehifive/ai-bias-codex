@@ -1,5 +1,5 @@
 {
-  "title": "The AI Bias Codex",
+  "title": "The Human-AI Interaction Bias Codex",
   "subtitle": "A Wikipedia-backed map of human judgment distortions in human-AI interaction.",
   "taxonomy_source": "data/wikipedia_taxonomy_review.json",
   "quadrants": [

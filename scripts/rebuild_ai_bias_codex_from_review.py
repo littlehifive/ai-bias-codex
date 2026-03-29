@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 
-DATASET_TITLE = "The AI Bias Codex"
+DATASET_TITLE = "The Human-AI Interaction Bias Codex"
 DATASET_SUBTITLE = "A Wikipedia-backed map of human judgment distortions in human-AI interaction."
 
 QUADRANT_SPECS = {

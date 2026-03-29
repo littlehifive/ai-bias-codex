@@ -38,6 +38,8 @@ DISPLAY_LABEL_OVERRIDES = {
     "Targeted advertising": "Targeted ads",
     "Argument from authority": "Authority argument",
 }
+QUADRANT_LINE_HEIGHT = 34.0
+TITLE_LINE_HEIGHT = 38.0
 
 TITLE_ID = "trsvg248"
 QUADRANT_IDS = ["trsvg249", "trsvg250", "trsvg251", "trsvg252"]
@@ -97,17 +99,26 @@ def replace_text_block(svg_text, text_id, lines):
             else:
                 tspans.append(f'<tspan x="{x_value}" dy="12.0">{escape(line)}</tspan>')
         replacement = open_tag + "".join(tspans) + close_tag
-    else:
-        if len(lines) == 1:
-            first_y = 2.0
-        else:
-            first_y = -((len(lines) - 1) * 22.5) / 2
+    elif "y=" in open_tag:
+        y_match = re.search(r'y=\"([^\"]+)\"', open_tag)
+        base_y = float(y_match.group(1))
+        first_y = base_y - ((len(lines) - 1) * TITLE_LINE_HEIGHT) / 2
         tspans = []
         for index, line in enumerate(lines):
             if index == 0:
                 tspans.append(f'<tspan x="0" y="{first_y:.1f}">{escape(line)}</tspan>')
             else:
-                tspans.append(f'<tspan x="0" dy="22.5">{escape(line)}</tspan>')
+                tspans.append(f'<tspan x="0" dy="{TITLE_LINE_HEIGHT:.1f}">{escape(line)}</tspan>')
+        replacement = open_tag + "".join(tspans) + close_tag
+    else:
+        line_height = QUADRANT_LINE_HEIGHT if text_id in QUADRANT_IDS else 22.5
+        first_y = -((len(lines) - 1) * line_height) / 2
+        tspans = []
+        for index, line in enumerate(lines):
+            if index == 0:
+                tspans.append(f'<tspan x="0" y="{first_y:.1f}">{escape(line)}</tspan>')
+            else:
+                tspans.append(f'<tspan x="0" dy="{line_height:.1f}">{escape(line)}</tspan>')
         replacement = open_tag + "".join(tspans) + close_tag
 
     return svg_text[: match.start()] + replacement + svg_text[match.end() :]
@@ -151,11 +162,7 @@ def rewrite_leaf_anchor(anchor_block, leaf=None, hide=False):
 
 
 def quadrant_lines(title):
-    words = title.split()
-    if len(words) <= 2:
-        return [" ".join(words[:-1]) or words[0], words[-1]] if len(words) == 2 else [title]
-    midpoint = math.ceil(len(words) / 2)
-    return [" ".join(words[:midpoint]), " ".join(words[midpoint:])]
+    return wrap_lines(title, 18)
 
 
 def statement_lines(label):
@@ -163,7 +170,7 @@ def statement_lines(label):
 
 
 def title_lines():
-    return ["T H E  A I  B I A S  C O D E X"]
+    return ["The Human-AI Interaction", "Bias Codex"]
 
 
 def main():
