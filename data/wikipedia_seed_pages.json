@@ -1,0 +1,64 @@
+{
+  "seed_pages": [
+    {
+      "title": "Human-AI interaction",
+      "url": "https://en.wikipedia.org/wiki/Human-AI_interaction",
+      "note": "Broad discovery hub for interaction effects, perception, and social dynamics."
+    },
+    {
+      "title": "Automation bias",
+      "url": "https://en.wikipedia.org/wiki/Automation_bias",
+      "note": "Primary hub for over-reliance, misuse, omission, commission, and complacency."
+    },
+    {
+      "title": "Algorithm aversion",
+      "url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
+      "note": "Primary hub for aversion, appreciation, transparency, and accountability concerns."
+    },
+    {
+      "title": "AI anthropomorphism",
+      "url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
+      "note": "Hub for human-likeness cues, social attribution, and personification of AI."
+    },
+    {
+      "title": "ELIZA effect",
+      "url": "https://en.wikipedia.org/wiki/ELIZA_effect",
+      "note": "Hub for conversational over-attribution to machine outputs."
+    },
+    {
+      "title": "Hallucination (artificial intelligence)",
+      "url": "https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29",
+      "note": "Hub for confident error, confabulation, and false certainty in LLM output."
+    },
+    {
+      "title": "Sycophancy",
+      "url": "https://en.wikipedia.org/wiki/Sycophancy",
+      "note": "Hub for agreement-seeking behavior and user-confirming model responses."
+    },
+    {
+      "title": "Algorithmic bias",
+      "url": "https://en.wikipedia.org/wiki/Algorithmic_bias",
+      "note": "Hub for stereotyping, representational harms, and fairness failures in user-facing systems."
+    },
+    {
+      "title": "Fairness (machine learning)",
+      "url": "https://en.wikipedia.org/wiki/Fairness_%28machine_learning%29",
+      "note": "Hub for fairness framing, protected attributes, and mitigation discourse."
+    },
+    {
+      "title": "Filter bubble",
+      "url": "https://en.wikipedia.org/wiki/Filter_bubble",
+      "note": "Hub for personalization, ranking, curation, and narrowed exposure."
+    },
+    {
+      "title": "Echo chamber (media)",
+      "url": "https://en.wikipedia.org/wiki/Echo_chamber_%28media%29",
+      "note": "Hub for belief reinforcement through repeated, like-minded content."
+    },
+    {
+      "title": "Authority bias",
+      "url": "https://en.wikipedia.org/wiki/Authority_bias",
+      "note": "Hub for credibility shortcuts that transfer well to AI interfaces."
+    }
+  ]
+}

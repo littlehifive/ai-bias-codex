@@ -1,0 +1,1034 @@
+{
+  "title": "The AI Bias Codex",
+  "subtitle": "A data-first map of the biases and failure patterns that surface when people interact with AI systems.",
+  "quadrants": [
+    {
+      "id": "ai-shapes-attention",
+      "title": "AI Shapes Attention",
+      "color": "#0a8f83",
+      "statements": [
+        {
+          "id": "highlights-ranks-repeats",
+          "label": "We notice what the interface highlights, ranks, and repeats",
+          "leaves": [
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We notice what the interface highlights, ranks, and repeats",
+              "bias_name": "Attentional bias",
+              "one_sentence_definition": "The tendency to notice some cues more readily than competing cues.",
+              "interaction_rationale": "Ranked outputs, highlighted answers, and suggestion chips steer user attention toward selected cues first.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Attentional_bias",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We notice what the interface highlights, ranks, and repeats",
+              "bias_name": "Availability heuristic",
+              "one_sentence_definition": "People judge importance and likelihood by what comes to mind most easily.",
+              "interaction_rationale": "AI surfaces the most retrievable answer first, making repeated patterns feel more representative than they are.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We notice what the interface highlights, ranks, and repeats",
+              "bias_name": "Mere-exposure effect",
+              "one_sentence_definition": "Repeated exposure increases familiarity and can increase preference or acceptance.",
+              "interaction_rationale": "When AI tools restate patterns or reuse familiar framings, users can start preferring them for that reason alone.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Mere-exposure_effect",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We notice what the interface highlights, ranks, and repeats",
+              "bias_name": "Illusory truth effect",
+              "one_sentence_definition": "Repeated claims feel truer even when repetition adds no evidence.",
+              "interaction_rationale": "AI-generated summaries, recommendations, and answer restatements can convert repetition into perceived truth.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Illusory_truth_effect",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "fluent-certain-complete",
+          "label": "We trust outputs that sound fluent, certain, and complete",
+          "leaves": [
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We trust outputs that sound fluent, certain, and complete",
+              "bias_name": "Processing fluency",
+              "one_sentence_definition": "Information that is easier to process feels more familiar, credible, and right.",
+              "interaction_rationale": "Cleanly worded AI output often feels reliable before users inspect whether the content is actually grounded.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Processing_fluency",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We trust outputs that sound fluent, certain, and complete",
+              "bias_name": "Truthiness",
+              "one_sentence_definition": "Claims can feel true because they sound right or fit intuition, not because they are verified.",
+              "interaction_rationale": "LLMs produce polished explanations that often reward intuitive plausibility more than evidential rigor.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Truthiness",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We trust outputs that sound fluent, certain, and complete",
+              "bias_name": "Illusion of validity",
+              "one_sentence_definition": "People can feel unwarranted confidence in judgments that rest on weak evidence.",
+              "interaction_rationale": "Detailed AI answers can create a false sense that the model's internal case is stronger than it is.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Illusion_of_validity",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We trust outputs that sound fluent, certain, and complete",
+              "bias_name": "Hallucination (artificial intelligence)",
+              "one_sentence_definition": "AI systems sometimes present false or unsupported content as if it were factual.",
+              "interaction_rationale": "Users often take confident, well-formed answers at face value and miss that the model is fabricating.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "vivid-personalized-emotional",
+          "label": "We give extra weight to vivid, personalized, or emotional examples",
+          "leaves": [
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We give extra weight to vivid, personalized, or emotional examples",
+              "bias_name": "Anecdotal evidence",
+              "one_sentence_definition": "A striking example can outweigh broader evidence in judgment.",
+              "interaction_rationale": "AI assistants make evidence feel concrete by generating custom stories and examples on demand.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Anecdotal_evidence",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We give extra weight to vivid, personalized, or emotional examples",
+              "bias_name": "Identifiable victim effect",
+              "one_sentence_definition": "People respond more strongly to specific, vivid individuals than to abstract groups.",
+              "interaction_rationale": "AI-generated personas and case studies can make one synthetic example outweigh population-level evidence.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Identifiable_victim_effect",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We give extra weight to vivid, personalized, or emotional examples",
+              "bias_name": "Affect heuristic",
+              "one_sentence_definition": "Emotional reactions become shortcuts for judging risk, value, and credibility.",
+              "interaction_rationale": "AI outputs with emotionally loaded wording can steer user judgment before analytic checking begins.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Affect_heuristic",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "We give extra weight to vivid, personalized, or emotional examples",
+              "bias_name": "Negativity bias",
+              "one_sentence_definition": "Negative information often has stronger impact than equally strong positive information.",
+              "interaction_rationale": "Warnings, failure cases, and alarming AI examples can dominate recall and shape trust disproportionally.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Negativity_bias",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "human-like-cues",
+          "label": "Human-like cues make systems feel more credible than they are",
+          "leaves": [
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Human-like cues make systems feel more credible than they are",
+              "bias_name": "AI anthropomorphism",
+              "one_sentence_definition": "People attribute human-like feelings, motives, and traits to AI systems.",
+              "interaction_rationale": "Voice, tone, and conversational polish invite users to overread agency and competence into the system.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/AI_anthropomorphism",
+              "link_kind": "exact",
+              "seed_page": "AI anthropomorphism",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Human-like cues make systems feel more credible than they are",
+              "bias_name": "ELIZA effect",
+              "one_sentence_definition": "People can attribute far more understanding to a conversational program than it warrants.",
+              "interaction_rationale": "Even simple back-and-forth can make users feel the model understands them as a social partner.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/ELIZA_effect",
+              "link_kind": "exact",
+              "seed_page": "ELIZA effect",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Human-like cues make systems feel more credible than they are",
+              "bias_name": "Computers are social actors",
+              "one_sentence_definition": "People often apply human social scripts to computers and software agents automatically.",
+              "interaction_rationale": "AI assistants trigger politeness, trust, reciprocity, and role assumptions that change how output is judged.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Computers_are_social_actors",
+              "link_kind": "exact",
+              "seed_page": "AI anthropomorphism",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Human-like cues make systems feel more credible than they are",
+              "bias_name": "Social presence theory",
+              "one_sentence_definition": "Interfaces can create a stronger sense that another social presence is really there.",
+              "interaction_rationale": "Chat, voice, avatar, and streaming cues make AI feel socially present and therefore easier to trust.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Social_presence_theory",
+              "link_kind": "exact",
+              "seed_page": "AI anthropomorphism",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "recommendations-defaults",
+          "label": "Recommendations and defaults narrow what we explore and question",
+          "leaves": [
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Recommendations and defaults narrow what we explore and question",
+              "bias_name": "Filter bubble",
+              "one_sentence_definition": "Personalized curation can isolate people inside a narrower information environment.",
+              "interaction_rationale": "AI ranking and recommendation systems quietly reduce exposure to disconfirming material.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Filter_bubble",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Recommendations and defaults narrow what we explore and question",
+              "bias_name": "Echo chamber (media)",
+              "one_sentence_definition": "Beliefs get reinforced when similar views circulate inside a closed loop.",
+              "interaction_rationale": "AI feeds and social recommendation systems can keep users inside self-confirming content loops.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Echo_chamber_%28media%29",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Recommendations and defaults narrow what we explore and question",
+              "bias_name": "Default effect",
+              "one_sentence_definition": "People disproportionately stick with preselected or default options.",
+              "interaction_rationale": "Suggested prompts, one-click accepts, and default model settings steer users without much reflection.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Default_effect",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Shapes Attention",
+              "statement": "Recommendations and defaults narrow what we explore and question",
+              "bias_name": "Recommender system",
+              "one_sentence_definition": "Recommendation engines sort and promote a subset of available options or content.",
+              "interaction_rationale": "What the system recommends becomes the local reality users inspect, compare, and remember.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Recommender_system",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "we-misread-what-ai-knows",
+      "title": "We Misread What AI Knows",
+      "color": "#1f6fa8",
+      "statements": [
+        {
+          "id": "language-imitates-understanding",
+          "label": "We infer understanding from language that only imitates understanding",
+          "leaves": [
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We infer understanding from language that only imitates understanding",
+              "bias_name": "Chinese room",
+              "one_sentence_definition": "A system can manipulate symbols convincingly without genuine understanding.",
+              "interaction_rationale": "Fluent dialogue makes users forget that token-level behavior is not the same thing as comprehension.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_room",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We infer understanding from language that only imitates understanding",
+              "bias_name": "Stochastic parrot",
+              "one_sentence_definition": "Large language models can mimic text patterns without grounded semantic understanding.",
+              "interaction_rationale": "Users often read deep understanding into outputs that are statistically assembled from prior language patterns.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Stochastic_parrot",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We infer understanding from language that only imitates understanding",
+              "bias_name": "Symbol grounding problem",
+              "one_sentence_definition": "Symbols do not automatically connect to real-world meaning just because they are manipulated coherently.",
+              "interaction_rationale": "AI can produce the right-looking words without anchoring them in the world users assume it knows.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Symbol_grounding_problem",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We infer understanding from language that only imitates understanding",
+              "bias_name": "Turing test",
+              "one_sentence_definition": "Human-like conversation can be mistaken for intelligence or understanding.",
+              "interaction_rationale": "Passing a conversational threshold makes users upgrade their beliefs about model competence too far.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Turing_test",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "confident-presentation-truth",
+          "label": "We treat confident presentation as evidence of truth",
+          "leaves": [
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We treat confident presentation as evidence of truth",
+              "bias_name": "Authority bias",
+              "one_sentence_definition": "People overweight claims that seem to come from an authority.",
+              "interaction_rationale": "AI systems inherit borrowed authority from branding, interface design, and technical mystique.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Authority_bias",
+              "link_kind": "exact",
+              "seed_page": "Authority bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We treat confident presentation as evidence of truth",
+              "bias_name": "Halo effect",
+              "one_sentence_definition": "A strong impression in one dimension spills over into other judgments.",
+              "interaction_rationale": "If an AI sounds competent or helpful, users may infer it is also accurate, fair, or thoughtful.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Halo_effect",
+              "link_kind": "exact",
+              "seed_page": "Authority bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We treat confident presentation as evidence of truth",
+              "bias_name": "Argument from authority",
+              "one_sentence_definition": "A claim is treated as stronger because of who appears to support it.",
+              "interaction_rationale": "Users can substitute the model's perceived status for direct evidence about the answer itself.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Argument_from_authority",
+              "link_kind": "exact",
+              "seed_page": "Authority bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We treat confident presentation as evidence of truth",
+              "bias_name": "Fluency heuristic",
+              "one_sentence_definition": "People infer higher value or truth from what is easier to read and process.",
+              "interaction_rationale": "Smoothly presented AI claims feel more trustworthy than slower, less polished alternatives.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Fluency_heuristic",
+              "link_kind": "exact",
+              "seed_page": "Authority bias",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "stories-about-intent-memory-fairness",
+          "label": "We fill opaque systems with stories about intent, memory, and fairness",
+          "leaves": [
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We fill opaque systems with stories about intent, memory, and fairness",
+              "bias_name": "Black box",
+              "one_sentence_definition": "Opaque systems invite judgments without exposing the internal process that produced them.",
+              "interaction_rationale": "When users cannot inspect the mechanism, they fill gaps with stories that may not match the system.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Black_box",
+              "link_kind": "exact",
+              "seed_page": "Explainable artificial intelligence",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We fill opaque systems with stories about intent, memory, and fairness",
+              "bias_name": "Explainable artificial intelligence",
+              "one_sentence_definition": "XAI aims to make AI outputs and decisions more understandable to humans.",
+              "interaction_rationale": "Users often take any explanation interface as proof that they now understand the model well enough.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence",
+              "link_kind": "exact",
+              "seed_page": "Explainable artificial intelligence",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We fill opaque systems with stories about intent, memory, and fairness",
+              "bias_name": "Mental model",
+              "one_sentence_definition": "People reason through simplified internal models of how a system works.",
+              "interaction_rationale": "Human-AI interaction depends on partial mental models that are often good enough to use, but still wrong.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Mental_model",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We fill opaque systems with stories about intent, memory, and fairness",
+              "bias_name": "Intentional stance",
+              "one_sentence_definition": "People predict behavior by treating an entity as if it had beliefs and desires.",
+              "interaction_rationale": "Users routinely explain AI outputs by imagining goals and intentions the model does not literally have.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Intentional_stance",
+              "link_kind": "exact",
+              "seed_page": "AI anthropomorphism",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "project-assumptions",
+          "label": "We project our own assumptions into ambiguous prompts and outputs",
+          "leaves": [
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We project our own assumptions into ambiguous prompts and outputs",
+              "bias_name": "Confirmation bias",
+              "one_sentence_definition": "People favor information that confirms their prior beliefs and expectations.",
+              "interaction_rationale": "Users often judge AI answers by whether they support the story they already wanted to hear.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We project our own assumptions into ambiguous prompts and outputs",
+              "bias_name": "Projection bias",
+              "one_sentence_definition": "Current preferences and states get projected onto future or ambiguous judgments.",
+              "interaction_rationale": "People read their own intent and context into underspecified prompts and then overcredit the model.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Projection_bias",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We project our own assumptions into ambiguous prompts and outputs",
+              "bias_name": "Naive realism",
+              "one_sentence_definition": "People assume their own interpretation is the obvious, objective one.",
+              "interaction_rationale": "Users often mistake their reading of an AI answer for the answer's only reasonable meaning.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Na%C3%AFve_realism_(psychology)",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We project our own assumptions into ambiguous prompts and outputs",
+              "bias_name": "Mind projection fallacy",
+              "one_sentence_definition": "People project features of their own mind onto the world and treat them as objective.",
+              "interaction_rationale": "In AI use, users can confuse their own framing assumptions with properties of the model itself.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Mind_projection_fallacy",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "pattern-matching-agreement",
+          "label": "We mistake pattern-matching and agreement for reasoning and explanation",
+          "leaves": [
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We mistake pattern-matching and agreement for reasoning and explanation",
+              "bias_name": "Sycophancy",
+              "one_sentence_definition": "A system can affirm the user's stance instead of independently tracking what is true.",
+              "interaction_rationale": "Agreement is easily mistaken for insight when the model mirrors the user's assumptions fluently.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Sycophancy",
+              "link_kind": "exact",
+              "seed_page": "Sycophancy",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We mistake pattern-matching and agreement for reasoning and explanation",
+              "bias_name": "Confabulation",
+              "one_sentence_definition": "Gaps can be filled with coherent but false explanations that feel internally plausible.",
+              "interaction_rationale": "AI systems often invent seamless causal stories, and users mistake narrative smoothness for reasoning.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Confabulation",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We mistake pattern-matching and agreement for reasoning and explanation",
+              "bias_name": "Illusory correlation",
+              "one_sentence_definition": "People perceive a meaningful relationship between variables that are not truly linked.",
+              "interaction_rationale": "Users can overread model associations or co-occurring phrases as evidence of deep causal structure.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Illusory_correlation",
+              "link_kind": "exact",
+              "seed_page": "Sycophancy",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "We Misread What AI Knows",
+              "statement": "We mistake pattern-matching and agreement for reasoning and explanation",
+              "bias_name": "Pareidolia",
+              "one_sentence_definition": "People detect meaningful patterns, forms, or signals in ambiguous noise.",
+              "interaction_rationale": "In human-AI interaction, users can see intention or structured reasoning where there is only surface patterning.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Pareidolia",
+              "link_kind": "exact",
+              "seed_page": "Sycophancy",
+              "review_status": "curated-v1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-steers-decisions",
+      "title": "AI Steers Decisions",
+      "color": "#5d8b1a",
+      "statements": [
+        {
+          "id": "defer-to-ai",
+          "label": "We defer to AI when it feels objective, authoritative, or efficient",
+          "leaves": [
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We defer to AI when it feels objective, authoritative, or efficient",
+              "bias_name": "Automation bias",
+              "one_sentence_definition": "People over-favor automated suggestions and underweight conflicting human or contextual evidence.",
+              "interaction_rationale": "AI advice often looks systematic and objective, which makes it easier to obey than to audit.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Automation_bias",
+              "link_kind": "exact",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We defer to AI when it feels objective, authoritative, or efficient",
+              "bias_name": "Algorithm appreciation",
+              "one_sentence_definition": "People sometimes prefer algorithmic judgment over human judgment because it appears more objective.",
+              "interaction_rationale": "In some domains, AI recommendations gain extra persuasive force simply by being machine-generated.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithm_aversion#Algorithm_appreciation",
+              "link_kind": "section",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We defer to AI when it feels objective, authoritative, or efficient",
+              "bias_name": "Automation misuse",
+              "one_sentence_definition": "Automation can be used or trusted in situations where closer human monitoring is still required.",
+              "interaction_rationale": "People treat AI output as a final answer instead of one input that still needs context and review.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Automation_bias#Disuse_and_misuse",
+              "link_kind": "section",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We defer to AI when it feels objective, authoritative, or efficient",
+              "bias_name": "Technological fix",
+              "one_sentence_definition": "Complex social problems get reframed as problems that better technology alone can solve.",
+              "interaction_rationale": "AI can look like a clean technical substitute for judgment, policy, and institutional accountability.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Technological_fix",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "reject-ai-threatens-agency",
+          "label": "We reject AI when it threatens agency, expertise, or accountability",
+          "leaves": [
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We reject AI when it threatens agency, expertise, or accountability",
+              "bias_name": "Algorithm aversion",
+              "one_sentence_definition": "People can reject algorithmic advice more harshly than equivalent human advice.",
+              "interaction_rationale": "AI recommendations are often resisted when errors feel less forgivable or accountability feels unclear.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithm_aversion",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We reject AI when it threatens agency, expertise, or accountability",
+              "bias_name": "Reactance",
+              "one_sentence_definition": "People push back when they feel their freedom or control is being constrained.",
+              "interaction_rationale": "Highly directive AI suggestions can provoke resistance simply because they feel autonomy-reducing.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Reactance_%28psychology%29",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We reject AI when it threatens agency, expertise, or accountability",
+              "bias_name": "Deskilling",
+              "one_sentence_definition": "Reliance on technology can erode human skill, confidence, and judgment over time.",
+              "interaction_rationale": "Users may resist AI when they see it hollowing out the expertise needed to supervise it well.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Deskilling",
+              "link_kind": "exact",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We reject AI when it threatens agency, expertise, or accountability",
+              "bias_name": "Not invented here",
+              "one_sentence_definition": "People can discount useful ideas because they originate from outside their own group or practice.",
+              "interaction_rationale": "Teams may resist AI help because it feels external, alien, or disrespectful to local expertise.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Not_invented_here",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "stop-monitoring",
+          "label": "Once the system seems reliable, we stop monitoring it closely",
+          "leaves": [
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "Once the system seems reliable, we stop monitoring it closely",
+              "bias_name": "Out-of-the-loop performance problem",
+              "one_sentence_definition": "Automation can push humans into passive monitoring roles that degrade manual oversight.",
+              "interaction_rationale": "The better the AI appears, the less prepared users become to catch or recover from failure.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Out-of-the-loop_performance_problem",
+              "link_kind": "exact",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "Once the system seems reliable, we stop monitoring it closely",
+              "bias_name": "Automation complacency",
+              "one_sentence_definition": "Perceived reliability reduces vigilance and can make automation failures harder to notice.",
+              "interaction_rationale": "As trust in AI rises, users may stop checking assumptions, edge cases, or missing evidence.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Automation_bias#Automation-induced_complacency",
+              "link_kind": "section",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "Once the system seems reliable, we stop monitoring it closely",
+              "bias_name": "Situation awareness",
+              "one_sentence_definition": "Effective supervision depends on maintaining an accurate grasp of what is happening now.",
+              "interaction_rationale": "AI can narrow situational awareness when the user only sees the model's summary instead of the raw state.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Situation_awareness",
+              "link_kind": "exact",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "Once the system seems reliable, we stop monitoring it closely",
+              "bias_name": "Vigilance",
+              "one_sentence_definition": "Sustained monitoring degrades when attention must be maintained over long, repetitive periods.",
+              "interaction_rationale": "Supervising AI is often boring when nothing seems wrong, which makes misses more likely when it is.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Vigilance",
+              "link_kind": "exact",
+              "seed_page": "Automation bias",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "rank-compare-automate",
+          "label": "We choose what is easiest to rank, compare, or automate",
+          "leaves": [
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We choose what is easiest to rank, compare, or automate",
+              "bias_name": "Goodhart's law",
+              "one_sentence_definition": "When a measure becomes a target, it stops being a reliable measure.",
+              "interaction_rationale": "AI systems often optimize what is legible and measurable rather than what humans actually value.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We choose what is easiest to rank, compare, or automate",
+              "bias_name": "McNamara fallacy",
+              "one_sentence_definition": "Quantifiable data can crowd out important factors that are harder to measure.",
+              "interaction_rationale": "AI decision pipelines privilege measurable proxies and hide what they leave out.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/McNamara_fallacy",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We choose what is easiest to rank, compare, or automate",
+              "bias_name": "Streetlight effect",
+              "one_sentence_definition": "People search where information is easiest to find rather than where the answer really is.",
+              "interaction_rationale": "AI encourages decision-making around structured, available inputs instead of missing but important context.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Streetlight_effect",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We choose what is easiest to rank, compare, or automate",
+              "bias_name": "Law of the instrument",
+              "one_sentence_definition": "Available tools can distort how problems are framed and which solutions seem natural.",
+              "interaction_rationale": "Once AI is in the toolbox, people start reshaping tasks to fit what the model can score or generate.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Law_of_the_instrument",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "invested-time-trust-habit",
+          "label": "We keep following AI-shaped workflows after investing time, trust, and habit",
+          "leaves": [
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We keep following AI-shaped workflows after investing time, trust, and habit",
+              "bias_name": "Sunk cost",
+              "one_sentence_definition": "Past investment keeps people committed even when future value is weak.",
+              "interaction_rationale": "Once teams spend time tuning prompts and workflows, they keep using them longer than warranted.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Sunk_cost",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We keep following AI-shaped workflows after investing time, trust, and habit",
+              "bias_name": "Status quo bias",
+              "one_sentence_definition": "Existing options gain extra inertia simply because they are already in place.",
+              "interaction_rationale": "Once AI is embedded in workflow defaults, reverting to manual judgment starts to feel abnormal.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Status_quo_bias",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We keep following AI-shaped workflows after investing time, trust, and habit",
+              "bias_name": "Escalation of commitment",
+              "one_sentence_definition": "People double down on a chosen course even after warning signs accumulate.",
+              "interaction_rationale": "Organizations can keep expanding AI use after visible failures because reversing course is reputationally costly.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Escalation_of_commitment",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Steers Decisions",
+              "statement": "We keep following AI-shaped workflows after investing time, trust, and habit",
+              "bias_name": "Lock-in effect",
+              "one_sentence_definition": "Early adoption can make later alternatives less attractive or harder to switch to.",
+              "interaction_rationale": "Tooling, data formats, habits, and vendor integration make AI choices sticky long after doubts appear.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Lock-in_effect",
+              "link_kind": "exact",
+              "seed_page": "Algorithm aversion",
+              "review_status": "curated-v1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-reinforces-beliefs",
+      "title": "AI Reinforces Beliefs",
+      "color": "#7c7c7c",
+      "statements": [
+        {
+          "id": "familiar-framings-feel-true",
+          "label": "Repeated AI framings become familiar and start to feel true",
+          "leaves": [
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Repeated AI framings become familiar and start to feel true",
+              "bias_name": "Familiarity heuristic",
+              "one_sentence_definition": "Familiar options and narratives are favored over unfamiliar ones.",
+              "interaction_rationale": "Repeated AI framings become easier to retrieve, which makes them feel more credible and usable.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Familiarity_heuristic",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Repeated AI framings become familiar and start to feel true",
+              "bias_name": "Availability cascade",
+              "one_sentence_definition": "Repeated public circulation can make an idea feel widely accepted and therefore more true.",
+              "interaction_rationale": "AI-generated repetition can accelerate cascades by amplifying the same phrasing across many contexts.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Availability_cascade",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Repeated AI framings become familiar and start to feel true",
+              "bias_name": "Framing effect",
+              "one_sentence_definition": "Different wording of the same information can change judgment and choice.",
+              "interaction_rationale": "AI reframes the same facts in multiple persuasive ways, which changes how users perceive them.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Framing_effect_%28psychology%29",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Repeated AI framings become familiar and start to feel true",
+              "bias_name": "Suggestibility",
+              "one_sentence_definition": "People can accept repeated suggestions and fold them into belief or memory.",
+              "interaction_rationale": "Persistent AI prompts, corrections, and recommendations can shift what users come to accept as reasonable.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Suggestibility",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "personalized-systems-feed-attention",
+          "label": "Personalized systems feed us more of what we already attend to",
+          "leaves": [
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Personalized systems feed us more of what we already attend to",
+              "bias_name": "Selective exposure theory",
+              "one_sentence_definition": "People seek information that fits what they already believe and avoid conflict.",
+              "interaction_rationale": "AI personalization compounds selective exposure by learning and replaying prior preferences.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_exposure_theory",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Personalized systems feed us more of what we already attend to",
+              "bias_name": "Selective perception",
+              "one_sentence_definition": "People interpret ambiguous information in ways that fit prior beliefs.",
+              "interaction_rationale": "Even when AI offers mixed evidence, users often notice the parts that confirm their current stance.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Selective_perception",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Personalized systems feed us more of what we already attend to",
+              "bias_name": "Homophily",
+              "one_sentence_definition": "Similarity drives connection, attention, and information flow between people and groups.",
+              "interaction_rationale": "AI personalization often learns from like-with-like behavior and serves more of the same back.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Homophily",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Personalized systems feed us more of what we already attend to",
+              "bias_name": "Targeted advertising",
+              "one_sentence_definition": "Data-driven targeting customizes messages for people with specific inferred traits.",
+              "interaction_rationale": "AI-optimized targeting reinforces what users already click, fear, desire, or identify with.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Targeted_advertising",
+              "link_kind": "exact",
+              "seed_page": "Filter bubble",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "launder-stereotypes",
+          "label": "AI can launder stereotypes into neutral-seeming outputs",
+          "leaves": [
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "AI can launder stereotypes into neutral-seeming outputs",
+              "bias_name": "Algorithmic bias",
+              "one_sentence_definition": "Algorithms can reproduce or amplify patterned unfairness in decisions and representations.",
+              "interaction_rationale": "Users may treat biased model outputs as neutral because they arrive through technical systems.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithmic_bias",
+              "link_kind": "exact",
+              "seed_page": "Algorithmic bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "AI can launder stereotypes into neutral-seeming outputs",
+              "bias_name": "Fairness (machine learning)",
+              "one_sentence_definition": "Fairness research studies how to evaluate and mitigate unequal outcomes in machine learning.",
+              "interaction_rationale": "Fairness language can obscure how much value judgment still remains in what the system outputs.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Fairness_%28machine_learning%29",
+              "link_kind": "exact",
+              "seed_page": "Fairness (machine learning)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "AI can launder stereotypes into neutral-seeming outputs",
+              "bias_name": "Stereotype",
+              "one_sentence_definition": "Generalized beliefs about groups compress people into oversimplified expected traits.",
+              "interaction_rationale": "AI outputs can restate group stereotypes in polished language that sounds detached and objective.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Stereotype",
+              "link_kind": "exact",
+              "seed_page": "Algorithmic bias",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "AI can launder stereotypes into neutral-seeming outputs",
+              "bias_name": "Bias blind spot",
+              "one_sentence_definition": "People recognize bias more easily in others than in themselves or their tools.",
+              "interaction_rationale": "Users often scrutinize human bias while overlooking the biases embedded in AI outputs they rely on.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Bias_blind_spot",
+              "link_kind": "exact",
+              "seed_page": "Algorithmic bias",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "shared-outputs-legitimate",
+          "label": "Shared AI outputs can make views look more common and legitimate than they are",
+          "leaves": [
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Shared AI outputs can make views look more common and legitimate than they are",
+              "bias_name": "Social proof",
+              "one_sentence_definition": "People use others' apparent choices as evidence for what is correct or acceptable.",
+              "interaction_rationale": "When AI content is reused everywhere, frequency itself starts to signal legitimacy.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Social_proof",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Shared AI outputs can make views look more common and legitimate than they are",
+              "bias_name": "Bandwagon effect",
+              "one_sentence_definition": "Perceived popularity can make positions more attractive simply because they seem popular.",
+              "interaction_rationale": "Widely copied AI framings can create the sense that everyone already agrees with them.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Bandwagon_effect",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Shared AI outputs can make views look more common and legitimate than they are",
+              "bias_name": "Information cascade",
+              "one_sentence_definition": "People can copy others' choices while ignoring their own private information.",
+              "interaction_rationale": "Once AI-generated claims are widely repeated, users infer consensus from repetition rather than evidence.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Information_cascade",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "Shared AI outputs can make views look more common and legitimate than they are",
+              "bias_name": "Groupthink",
+              "one_sentence_definition": "Pressure toward consensus can suppress dissent and reduce critical evaluation.",
+              "interaction_rationale": "Shared AI summaries can harden group consensus by giving everyone the same polished starting point.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Groupthink",
+              "link_kind": "exact",
+              "seed_page": "Echo chamber (media)",
+              "review_status": "curated-v1"
+            }
+          ]
+        },
+        {
+          "id": "remember-answer-forget-uncertainty",
+          "label": "We remember the answer and forget the uncertainty, caveats, and provenance",
+          "leaves": [
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "We remember the answer and forget the uncertainty, caveats, and provenance",
+              "bias_name": "Misinformation effect",
+              "one_sentence_definition": "Later information can distort how an earlier event or claim is remembered.",
+              "interaction_rationale": "AI paraphrases and restatements can overwrite a user's memory of what the source originally said.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Misinformation_effect",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "We remember the answer and forget the uncertainty, caveats, and provenance",
+              "bias_name": "Source-monitoring error",
+              "one_sentence_definition": "People can remember content while misremembering where it came from.",
+              "interaction_rationale": "AI-generated text is easy to remember and easy to detach from whether it was verified, guessed, or cited.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Source-monitoring_error",
+              "link_kind": "exact",
+              "seed_page": "Hallucination (artificial intelligence)",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "We remember the answer and forget the uncertainty, caveats, and provenance",
+              "bias_name": "Hindsight bias",
+              "one_sentence_definition": "After the fact, outcomes feel more predictable and obvious than they really were.",
+              "interaction_rationale": "Once an AI explanation is seen, users may misremember their own earlier uncertainty or competing views.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            },
+            {
+              "quadrant": "AI Reinforces Beliefs",
+              "statement": "We remember the answer and forget the uncertainty, caveats, and provenance",
+              "bias_name": "Google effect",
+              "one_sentence_definition": "People remember where information can be retrieved instead of encoding the information itself.",
+              "interaction_rationale": "AI assistants intensify offloading by making users remember the tool rather than the justification.",
+              "wikipedia_url": "https://en.wikipedia.org/wiki/Google_effect",
+              "link_kind": "exact",
+              "seed_page": "Human-AI interaction",
+              "review_status": "curated-v1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
