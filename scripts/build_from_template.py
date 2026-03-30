@@ -11,10 +11,19 @@ from pathlib import Path
 
 DISPLAY_LABEL_OVERRIDES = {}
 QUADRANT_LINE_HEIGHT = 34.0
-TITLE_LINE_HEIGHT = 38.0
+TITLE_LINE_HEIGHT = 42.0
+TITLE_FONT_SIZE = 40.0
+TITLE_Y = -720.0
+FOOTER_TEXT_COLOR = "#5f5f5f"
+FOOTER_FONT_SIZE = 11.0
+FOOTER_LEFT_X = 110
+FOOTER_START_Y = 1510
+FOOTER_LINE_HEIGHT = 13
+EXPANDED_CANVAS_HEIGHT = 1620
 
 TITLE_ID = "trsvg248"
 QUADRANT_IDS = ["trsvg249", "trsvg250", "trsvg251", "trsvg252"]
+TEMPLATE_QUADRANT_COLORS = ["#098", "#07A", "#490", "#888"]
 STATEMENT_IDS = [
     "trsvg265",
     "trsvg272",
@@ -74,6 +83,9 @@ def replace_text_block(svg_text, text_id, lines):
                 tspans.append(f'<tspan x="{x_value}" dy="12.0">{escape(line)}</tspan>')
         replacement = open_tag + "".join(tspans) + close_tag
     elif "y=" in open_tag:
+        if text_id == TITLE_ID:
+            open_tag = re.sub(r'font-size:[0-9.]+px;', f'font-size:{TITLE_FONT_SIZE:.1f}px;', open_tag)
+            open_tag = re.sub(r'y=\"[^\"]+\"', f'y="{TITLE_Y:.1f}"', open_tag)
         y_match = re.search(r'y=\"([^\"]+)\"', open_tag)
         base_y = float(y_match.group(1))
         first_y = base_y - ((len(lines) - 1) * TITLE_LINE_HEIGHT) / 2
@@ -145,7 +157,90 @@ def statement_lines(label):
 
 
 def title_lines():
-    return ["The Human-AI Interaction", "Bias Codex"]
+    return ["THE HUMAN-AI INTERACTION", "BIAS CODEX"]
+
+
+def apply_quadrant_colors(svg_text, quadrant_colors):
+    updated = svg_text
+    for template_color, color in zip(TEMPLATE_QUADRANT_COLORS, quadrant_colors):
+        updated = updated.replace(template_color, color)
+    return updated
+
+
+def apply_statement_text_colors(svg_text, quadrant_colors):
+    updated = svg_text
+    for index, text_id in enumerate(STATEMENT_IDS):
+        color = quadrant_colors[index // 5]
+        pattern = re.compile(rf'(<text[^>]*id="{text_id}"[^>]*)(>)')
+        updated, count = pattern.subn(
+            lambda match: (
+                re.sub(r'fill=\"[^\"]*\"', f'fill="{color}"', match.group(1))
+                if "fill=" in match.group(1)
+                else match.group(1) + f' fill="{color}"'
+            )
+            + match.group(2),
+            updated,
+            count=1,
+        )
+        if count == 0:
+            raise ValueError(f"Unable to find statement text block for {text_id}.")
+    return updated
+
+
+def footer_notes_svg():
+    footer = [
+        '<g id="footer-notes">',
+        (
+            f'<text x="{FOOTER_LEFT_X}" y="{FOOTER_START_Y}" fill="{FOOTER_TEXT_COLOR}" '
+            f'font-size="{FOOTER_FONT_SIZE:.1f}px" font-weight="600">Notes</text>'
+        ),
+    ]
+    y = FOOTER_START_Y + FOOTER_LINE_HEIGHT
+    rendered_lines = [
+        [
+            ('1. This infographic is largely inspired by the design of the Cognitive Bias Codex, originally developed by John Manoogian III (jm3) and based on the conceptual organization of biases by Buster Benson, as seen here: ', None),
+            ('Cognitive Bias Codex on Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg'),
+            ('.', None),
+        ],
+        [
+            ('2. Unlike cognitive biases, which thanks to Buster Benson have a relatively structured and consolidated presence on Wikipedia, this categorization of biases in human-AI interaction is an exploratory effort by ', None),
+            ('Zezhen Wu', 'https://www.linkedin.com/in/zezhenwu/'),
+            (',', None),
+            (' it extends beyond strictly defined "biases" to organize four broader domains where both AI and human cognitive biases may shape interactions,', None),
+        ],
+        [
+            ('drawing on an attempt-to-be-exhaustive synthesis of academic literature and Wikipedia-based scraping assisted by Codex, and is shared as an open, non-canonical resource that the public is invited to fork and refine via ', None),
+            ('GitHub', 'https://github.com/littlehifive/ai-bias-codex'),
+            ('.', None),
+        ],
+    ]
+    for line in rendered_lines:
+        footer.append(
+            f'<text x="{FOOTER_LEFT_X}" y="{y}" fill="{FOOTER_TEXT_COLOR}" font-size="{FOOTER_FONT_SIZE:.1f}px">'
+        )
+        for text, href in line:
+            if href:
+                footer.append(
+                    f'<a xlink:href="{href}"><tspan text-decoration="underline">{escape(text)}</tspan></a>'
+                )
+            else:
+                footer.append(f'<tspan>{escape(text)}</tspan>')
+        footer.append("</text>")
+        y += FOOTER_LINE_HEIGHT
+    footer.append("</g>")
+    return "\n".join(footer)
+
+
+def append_footer_notes(svg_text):
+    if "</svg>" not in svg_text:
+        raise ValueError("Unable to append footer notes; SVG closing tag not found.")
+    return svg_text.replace("</svg>", footer_notes_svg() + "\n\n</svg>")
+
+
+def expand_canvas_height(svg_text):
+    updated = re.sub(r'height="1500"', f'height="{EXPANDED_CANVAS_HEIGHT}"', svg_text, count=1)
+    updated = re.sub(r'viewBox="0 0 1900 1500"', f'viewBox="0 0 1900 {EXPANDED_CANVAS_HEIGHT}"', updated, count=1)
+    return updated
 
 
 def main():
@@ -157,6 +252,8 @@ def main():
 
     dataset = json.loads(args.dataset.read_text())
     svg = args.template.read_text()
+    quadrant_colors = [quadrant["color"] for quadrant in dataset["quadrants"]]
+    svg = apply_quadrant_colors(svg, quadrant_colors)
 
     svg = replace_text_block(svg, TITLE_ID, title_lines())
 
@@ -206,7 +303,11 @@ def main():
         cursor = match.end()
     rebuilt.append(svg[cursor:])
 
-    args.output.write_text("".join(rebuilt))
+    final_svg = expand_canvas_height("".join(rebuilt))
+    final_svg = apply_statement_text_colors(final_svg, quadrant_colors)
+    final_svg = append_footer_notes(final_svg)
+
+    args.output.write_text(final_svg)
     print(f"Wrote {args.output}")
     print(f"Visible leaves: {visible_leaves}")
     if omitted:

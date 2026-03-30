@@ -12,10 +12,10 @@ import certifi
 
 
 DEFAULT_COLORS = {
-    "Trust and Reliance Miscalibration": "#1f6fa8",
-    "Belief Reinforcement and Selective Uptake": "#7c7c7c",
-    "Judgment Steering by Anchors and Frames": "#0a8f83",
-    "Mind-Perception and Capability Illusions": "#5d8b1a",
+    "Trust and Reliance Miscalibration": "#26547c",
+    "Belief Reinforcement and Selective Uptake": "#ef476f",
+    "Judgment Steering by Anchors and Frames": "#006d77",
+    "Mind-Perception and Capability Illusions": "#f9a03f",
 }
 WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
 ACCEPTED_STATUSES = {"accepted-leaf", "accepted-support"}

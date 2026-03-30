@@ -541,7 +541,7 @@
       "top_level_category": "Trust and Reliance Miscalibration",
       "public_label": "We trust AI too much or too little",
       "failure_point": "whether we follow AI appropriately",
-      "color": "#1f6fa8",
+      "color": "#26547c",
       "wedges": [
         {
           "id": "over-reliance-and-automation-misuse",
@@ -899,7 +899,7 @@
       "top_level_category": "Belief Reinforcement and Selective Uptake",
       "public_label": "We use AI to confirm what we already believe",
       "failure_point": "how our prior beliefs shape what we take from AI",
-      "color": "#7c7c7c",
+      "color": "#ef476f",
       "wedges": [
         {
           "id": "confirmation-and-motivated-interpretation",
@@ -1287,7 +1287,7 @@
       "top_level_category": "Judgment Steering by Anchors and Frames",
       "public_label": "AI's suggestions steer our choices",
       "failure_point": "how AI presentation shapes our choices",
-      "color": "#0a8f83",
+      "color": "#006d77",
       "wedges": [
         {
           "id": "anchors-and-heuristic-shortcuts",
@@ -1637,7 +1637,7 @@
       "top_level_category": "Mind-Perception and Capability Illusions",
       "public_label": "We mistake AI for understanding more than it does",
       "failure_point": "how we misunderstand what the AI is",
-      "color": "#5d8b1a",
+      "color": "#f9a03f",
       "wedges": [
         {
           "id": "human-likeness-cues",

@@ -8,7 +8,7 @@
       "title": "We trust AI too much or too little",
       "research_title": "Trust and Reliance Miscalibration",
       "failure_point": "whether we follow AI appropriately",
-      "color": "#1f6fa8",
+      "color": "#26547c",
       "statements": [
         {
           "id": "over-reliance-and-automation-misuse",
@@ -330,7 +330,7 @@
       "title": "We use AI to confirm what we already believe",
       "research_title": "Belief Reinforcement and Selective Uptake",
       "failure_point": "how our prior beliefs shape what we take from AI",
-      "color": "#7c7c7c",
+      "color": "#ef476f",
       "statements": [
         {
           "id": "confirmation-and-motivated-interpretation",
@@ -678,7 +678,7 @@
       "title": "AI's suggestions steer our choices",
       "research_title": "Judgment Steering by Anchors and Frames",
       "failure_point": "how AI presentation shapes our choices",
-      "color": "#0a8f83",
+      "color": "#006d77",
       "statements": [
         {
           "id": "anchors-and-heuristic-shortcuts",
@@ -992,7 +992,7 @@
       "title": "We mistake AI for understanding more than it does",
       "research_title": "Mind-Perception and Capability Illusions",
       "failure_point": "how we misunderstand what the AI is",
-      "color": "#5d8b1a",
+      "color": "#f9a03f",
       "statements": [
         {
           "id": "human-likeness-cues",
