@@ -1,8 +1,6 @@
 # The Human-AI Interaction Bias Codex
 
-This repository contains the source data and build scripts for `ai_bias_codex.svg`, an exploratory infographic about where human and AI-related biases can distort human-AI interaction.
-
-## Attribution And Provenance
+This repository contains the source data and build scripts for `ai_bias_codex.svg`, an exploratory infographic about where human and AI-related biases can distort human-AI interaction. Please visit [this site](https://littlehifive.github.io/ai-bias-codex/) for an interactive view of the graph.
 
 This infographic is largely inspired by the design of the Cognitive Bias Codex, originally developed by John Manoogian III (jm3) and based on the conceptual organization of biases by Buster Benson. The original visual reference is available on Wikimedia Commons:
 [Cognitive Bias Codex](https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg).
@@ -13,19 +11,12 @@ Unlike cognitive biases, which, thanks in part to Buster Benson's work, have a r
 ## What This Is
 
 This codex organizes four broad domains of distortion in human-AI interaction:
-- trust and reliance miscalibration
-- belief reinforcement and selective uptake
-- judgment steering by anchors and frames
-- mind-perception and capability illusions
+- trust and reliance miscalibration: We trust AI too much or too little.
+- belief reinforcement and selective uptake: We use AI to confirm what we already believe.
+- judgment steering by anchors and frames: AI's suggestions steer our choices.
+- mind-perception and capability illusions: We mistake AI for understanding more than it does.
 
 It is not meant as a canonical taxonomy. Unlike cognitive biases, which have a relatively consolidated presence on Wikipedia, this map is an exploratory synthesis that mixes classical cognitive biases, interaction effects, and AI-specific framing concepts when they help explain recurring human-AI failure patterns.
-
-The project is data-first:
-- `data/wikipedia_seed_pages.json` defines the discovery scope.
-- `data/wikipedia_candidates.json` stores the scraped candidate pool.
-- `data/wikipedia_taxonomy_review.json` stores the reviewed taxonomy and accepted concepts.
-- `data/ai_bias_codex.json` is the render-ready dataset.
-- `ai_bias_codex.svg` is the generated infographic.
 
 ## How The Infographic Was Created
 
