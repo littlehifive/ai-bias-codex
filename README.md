@@ -1,13 +1,14 @@
-# ai-bias-codex
+# The Human-AI Interaction Bias Codex
 
 This repository contains the source data and build scripts for `ai_bias_codex.svg`, an exploratory infographic about where human and AI-related biases can distort human-AI interaction.
 
-The project is data-first:
-- `data/wikipedia_seed_pages.json` defines the discovery scope.
-- `data/wikipedia_candidates.json` stores the scraped candidate pool.
-- `data/wikipedia_taxonomy_review.json` stores the reviewed taxonomy and accepted concepts.
-- `data/ai_bias_codex.json` is the render-ready dataset.
-- `ai_bias_codex.svg` is the generated infographic.
+## Attribution And Provenance
+
+This infographic is largely inspired by the design of the Cognitive Bias Codex, originally developed by John Manoogian III (jm3) and based on the conceptual organization of biases by Buster Benson. The original visual reference is available on Wikimedia Commons:
+[Cognitive Bias Codex](https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg).
+
+Unlike cognitive biases, which, thanks in part to Buster Benson's work, have a relatively structured and consolidated presence on Wikipedia, this categorization of biases in human-AI interaction is an exploratory effort by [Zezhen Wu](https://www.linkedin.com/in/zezhenwu/). It extends beyond strictly defined "biases" to organize four broader domains where both AI and human cognitive biases may shape interactions. The structure was assembled through an attempt-to-be-exhaustive synthesis of academic literature together with Wikipedia-based scraping and review assisted by Codex, and is shared as an open, non-canonical resource that the public is invited to fork and refine via GitHub:
+[littlehifive/ai-bias-codex](https://github.com/littlehifive/ai-bias-codex).
 
 ## What This Is
 
@@ -19,13 +20,12 @@ This codex organizes four broad domains of distortion in human-AI interaction:
 
 It is not meant as a canonical taxonomy. Unlike cognitive biases, which have a relatively consolidated presence on Wikipedia, this map is an exploratory synthesis that mixes classical cognitive biases, interaction effects, and AI-specific framing concepts when they help explain recurring human-AI failure patterns.
 
-## Attribution And Provenance
-
-This infographic is largely inspired by the design of the Cognitive Bias Codex, originally developed by John Manoogian III (jm3) and based on the conceptual organization of biases by Buster Benson. The original visual reference is available on Wikimedia Commons:
-[Cognitive Bias Codex](https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg).
-
-Unlike cognitive biases, which, thanks in part to Buster Benson's work, have a relatively structured and consolidated presence on Wikipedia, this categorization of biases in human-AI interaction is an exploratory effort by [Zezhen Wu](https://www.linkedin.com/in/zezhenwu/). It extends beyond strictly defined "biases" to organize four broader domains where both AI and human cognitive biases may shape interactions. The structure was assembled through an attempt-to-be-exhaustive synthesis of academic literature together with Wikipedia-based scraping and review assisted by Codex, and is shared as an open, non-canonical resource that the public is invited to fork and refine via GitHub:
-[littlehifive/ai-bias-codex](https://github.com/littlehifive/ai-bias-codex).
+The project is data-first:
+- `data/wikipedia_seed_pages.json` defines the discovery scope.
+- `data/wikipedia_candidates.json` stores the scraped candidate pool.
+- `data/wikipedia_taxonomy_review.json` stores the reviewed taxonomy and accepted concepts.
+- `data/ai_bias_codex.json` is the render-ready dataset.
+- `ai_bias_codex.svg` is the generated infographic.
 
 ## How The Infographic Was Created
 
