@@ -1,50 +1,115 @@
 # ai-bias-codex
 
-This repository contains a data-first AI bias codex focused on human judgment distortions in human-AI interaction, plus the Wikipedia-backed research taxonomy used to refine and regenerate the codex.
+This repository contains the source data and build scripts for `ai_bias_codex.svg`, an exploratory infographic about where human and AI-related biases can distort human-AI interaction.
 
-Files:
-- [data/ai_bias_codex.json](/Users/michaelfive/Code/mystuff/ai-bias-codex/data/ai_bias_codex.json): Current infographic dataset and SVG source of truth.
-- [data/wikipedia_seed_pages.json](/Users/michaelfive/Code/mystuff/ai-bias-codex/data/wikipedia_seed_pages.json): Category-specific Wikipedia discovery config with both one-hop `seed_pages` and curated `exact_candidates`.
-- [data/wikipedia_candidates.json](/Users/michaelfive/Code/mystuff/ai-bias-codex/data/wikipedia_candidates.json): Deduplicated raw candidate pages produced from the current seed and exact-candidate set.
-- [data/wikipedia_taxonomy_review.json](/Users/michaelfive/Code/mystuff/ai-bias-codex/data/wikipedia_taxonomy_review.json): Canonical review taxonomy with accepted leaves, support pages, explicit wedge clustering, confidence, and rejected pages.
-- [scripts/rebuild_ai_bias_codex_from_review.py](/Users/michaelfive/Code/mystuff/ai-bias-codex/scripts/rebuild_ai_bias_codex_from_review.py): Rebuilds the infographic dataset directly from the reviewed wedge taxonomy.
-- [scripts/build_from_template.py](/Users/michaelfive/Code/mystuff/ai-bias-codex/scripts/build_from_template.py): Preferred renderer that fills the original SVG template while preserving its geometry.
-- [scripts/scrape_wikipedia_candidates.py](/Users/michaelfive/Code/mystuff/ai-bias-codex/scripts/scrape_wikipedia_candidates.py): Category-aware Wikipedia link scraper that expands each seed set into deduplicated candidate pages.
-- [scripts/generate_ai_bias_codex.py](/Users/michaelfive/Code/mystuff/ai-bias-codex/scripts/generate_ai_bias_codex.py): Validator and SVG generator.
-- [ai_bias_codex.svg](/Users/michaelfive/Code/mystuff/ai-bias-codex/ai_bias_codex.svg): Generated infographic.
+The project is data-first:
+- `data/wikipedia_seed_pages.json` defines the discovery scope.
+- `data/wikipedia_candidates.json` stores the scraped candidate pool.
+- `data/wikipedia_taxonomy_review.json` stores the reviewed taxonomy and accepted concepts.
+- `data/ai_bias_codex.json` is the render-ready dataset.
+- `ai_bias_codex.svg` is the generated infographic.
 
-Rebuild the infographic dataset from the reviewed taxonomy:
+## What This Is
+
+This codex organizes four broad domains of distortion in human-AI interaction:
+- trust and reliance miscalibration
+- belief reinforcement and selective uptake
+- judgment steering by anchors and frames
+- mind-perception and capability illusions
+
+It is not meant as a canonical taxonomy. Unlike cognitive biases, which have a relatively consolidated presence on Wikipedia, this map is an exploratory synthesis that mixes classical cognitive biases, interaction effects, and AI-specific framing concepts when they help explain recurring human-AI failure patterns.
+
+## Attribution And Provenance
+
+This infographic is largely inspired by the design of the Cognitive Bias Codex, originally developed by John Manoogian III (jm3) and based on the conceptual organization of biases by Buster Benson. The original visual reference is available on Wikimedia Commons:
+[Cognitive Bias Codex](https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg).
+
+Unlike cognitive biases, which, thanks in part to Buster Benson's work, have a relatively structured and consolidated presence on Wikipedia, this categorization of biases in human-AI interaction is an exploratory effort by [Zezhen Wu](https://www.linkedin.com/in/zezhenwu/). It extends beyond strictly defined "biases" to organize four broader domains where both AI and human cognitive biases may shape interactions. The structure was assembled through an attempt-to-be-exhaustive synthesis of academic literature together with Wikipedia-based scraping and review assisted by Codex, and is shared as an open, non-canonical resource that the public is invited to fork and refine via GitHub:
+[littlehifive/ai-bias-codex](https://github.com/littlehifive/ai-bias-codex).
+
+## How The Infographic Was Created
+
+The current build process works in five stages:
+
+1. Define the search space in `data/wikipedia_seed_pages.json`.
+2. Scrape one-hop Wikipedia candidates plus curated exact candidates into `data/wikipedia_candidates.json`.
+3. Review and cluster accepted pages into wedge-level taxonomy entries in `data/wikipedia_taxonomy_review.json`.
+4. Rebuild the render dataset in `data/ai_bias_codex.json`.
+5. Fill the original codex SVG template and write `ai_bias_codex.svg`.
+
+The renderer uses `Cognitive_bias_codex_en.svg` as a template so the final output preserves the geometry of the original codex layout while replacing the titles, wedges, labels, links, colors, and footer notes with the AI-bias-specific content from this repository.
+
+## Repo Layout
+
+- `Cognitive_bias_codex_en.svg`: original template used as the structural base for the final render.
+- `ai_bias_codex.svg`: generated infographic.
+- `data/ai_bias_codex.json`: render-ready dataset for the infographic.
+- `data/wikipedia_seed_pages.json`: discovery configuration for seed pages and exact candidates.
+- `data/wikipedia_candidates.json`: scraped and deduplicated candidate pages.
+- `data/wikipedia_taxonomy_review.json`: reviewed taxonomy, accepted concepts, clustering, and rejection notes.
+- `scripts/scrape_wikipedia_candidates.py`: fetches candidate pages from Wikipedia.
+- `scripts/rebuild_ai_bias_codex_from_review.py`: converts the reviewed taxonomy into the render-ready dataset.
+- `scripts/build_from_template.py`: renders the final SVG from the dataset and template.
+- `scripts/generate_ai_bias_codex.py`: validates the dataset and can render a standalone non-template SVG.
+
+## Rebuild
+
+Prerequisites:
+
+- Python 3
+- `certifi`
+
+Install the only non-stdlib Python dependency:
 
 ```bash
-python3 scripts/rebuild_ai_bias_codex_from_review.py data/wikipedia_taxonomy_review.json data/ai_bias_codex.json
+python3 -m pip install certifi
 ```
 
-Generate the infographic:
+Re-scrape candidate pages from the configured seed set:
 
 ```bash
-python3 scripts/build_from_template.py data/ai_bias_codex.json Cognitive_bias_codex_en.svg ai_bias_codex.svg
+python3 scripts/scrape_wikipedia_candidates.py \
+  data/wikipedia_seed_pages.json \
+  data/wikipedia_candidates.json
 ```
 
-Validate the taxonomy only:
+Rebuild the render dataset from the reviewed taxonomy:
+
+```bash
+python3 scripts/rebuild_ai_bias_codex_from_review.py \
+  data/wikipedia_taxonomy_review.json \
+  data/ai_bias_codex.json
+```
+
+That step performs live Wikipedia validation by default. If you need an offline rebuild from already-reviewed data:
+
+```bash
+python3 scripts/rebuild_ai_bias_codex_from_review.py \
+  --skip-wikipedia-validation \
+  data/wikipedia_taxonomy_review.json \
+  data/ai_bias_codex.json
+```
+
+Render the final infographic:
+
+```bash
+python3 scripts/build_from_template.py \
+  data/ai_bias_codex.json \
+  Cognitive_bias_codex_en.svg \
+  ai_bias_codex.svg
+```
+
+Optional dataset validation:
 
 ```bash
 python3 scripts/generate_ai_bias_codex.py data/ai_bias_codex.json --validate-only
 ```
 
-Scrape direct Wikipedia links from the configured seed pages:
+## Current Snapshot
 
-```bash
-python3 scripts/scrape_wikipedia_candidates.py data/wikipedia_seed_pages.json data/wikipedia_candidates.json
-```
+At the moment, the reviewed taxonomy renders:
+- 4 top-level domains
+- 20 wedge statements
+- 75 linked concepts
 
-Notes:
-- The research taxonomy is organized around four fixed failure points:
-  `Trust and Reliance Miscalibration`, `Belief Reinforcement and Selective Uptake`, `Judgment Steering by Anchors and Frames`, and `Mind-Perception and Capability Illusions`.
-- The four top-level categories stay fixed, but the 20 wedge labels are now derived from the reviewed term clusters rather than hard-coded in Python.
-- `data/wikipedia_seed_pages.json` includes curated exact candidates so the review pass can cover important pages that do not appear through one-hop link scraping alone.
-- `data/wikipedia_taxonomy_review.json` contains the curated table, recommended codex structure, candidate inventory, rejected-page log, and wedge-level public labels for the current taxonomy.
-- The current infographic dataset contains `75` exact Wikipedia-linked concepts across `20` statements.
-- The dataset stores `quadrant`, `statement`, `bias_name`, `display_label`, `one_sentence_definition`, `interaction_rationale`, `wikipedia_url`, `link_kind`, `seed_page`, and `review_status` for every leaf.
-- The scraper hits the live Wikipedia API, so it needs outbound network access when you run it.
-- The template renderer preserves the original codex geometry and hides unused template slots.
-- The current reviewed taxonomy is sized so the strict template build renders all `75` visible concepts with no omissions.
+The final SVG includes outbound Wikipedia links for the visible concepts plus a footer that records the inspiration and open-resource status of the project.
