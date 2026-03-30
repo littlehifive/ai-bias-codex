@@ -1,6 +1,6 @@
 # The Human-AI Interaction Bias Codex
 
-This repository contains the source data and build scripts for `ai_bias_codex.svg`, an exploratory infographic about where human and AI-related biases can distort human-AI interaction. Please visit [this site](littlehifive.github.io/ai-bias-codex/) for an interactive view of the graph.
+This repository contains the source data and build scripts for `ai_bias_codex.svg`, an exploratory infographic about where human and AI-related biases can distort human-AI interaction. Please visit [this site](https://littlehifive.github.io/ai-bias-codex/) for an interactive view of the graph.
 
 This infographic is largely inspired by the design of the Cognitive Bias Codex, originally developed by John Manoogian III (jm3) and based on the conceptual organization of biases by Buster Benson. The original visual reference is available on Wikimedia Commons:
 [Cognitive Bias Codex](https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg).
