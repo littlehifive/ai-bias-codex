@@ -43,7 +43,7 @@
       }
 
       .page {
-        width: min(1440px, calc(100vw - 32px));
+        width: min(1560px, calc(100vw - 16px));
         margin: 0 auto;
         padding: 24px 0 32px;
       }
@@ -73,7 +73,7 @@
 
       .intro {
         margin: 0;
-        max-width: 72ch;
+        max-width: 112ch;
         color: var(--muted);
         font-size: 1.05rem;
         line-height: 1.6;
@@ -160,9 +160,21 @@
         <p class="eyebrow">Interactive Infographic</p>
         <h1>The Human-AI Interaction Bias Codex</h1>
         <p class="intro">
-          This page hosts the interactive web view of the codex. The infographic below is loaded as
-          live SVG so its embedded links remain clickable. Open the SVG directly if you want the raw
-          asset without the page wrapper.
+          This infographic is largely inspired by the design of the
+          <a href="https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg">Cognitive Bias Codex</a>,
+          originally developed by John Manoogian III (jm3) and based on the conceptual organization
+          of biases by Buster Benson.
+        </p>
+        <p class="intro">
+          Unlike cognitive biases, which, thanks to Buster Benson, have a relatively structured and
+          consolidated presence on Wikipedia, this categorization of biases in human-AI interaction
+          is an exploratory effort by
+          <a href="https://www.linkedin.com/in/zezhenwu/">Zezhen Wu</a>. It extends beyond strictly
+          defined "biases" to organize four broader domains where both AI and human cognitive biases
+          may shape interactions, drawing on an attempt-to-be-exhaustive synthesis of academic
+          literature and Wikipedia-based scraping assisted by Codex, and is shared as an open,
+          non-canonical resource that the public is invited to fork and refine via
+          <a href="https://github.com/littlehifive/ai-bias-codex">GitHub</a>.
         </p>
         <div class="actions">
           <a class="button primary" href="./ai_bias_codex.svg">Open SVG Directly</a>
@@ -183,10 +195,6 @@
             instead.
           </p>
         </object>
-        <p class="note">
-          If you update the root infographic, run <code>python3 scripts/sync_pages_site.py</code> so
-          the copy in <code>docs/</code> stays in sync before you push.
-        </p>
       </section>
     </main>
   </body>
